@@ -118,6 +118,114 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:Home_Reservation_System.frmdashboard._errormessage">
+<summary>
+errormessage control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Home_Reservation_System.frmdashboard._Label16">
+<summary>
+Label16 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Home_Reservation_System.frmdashboard._Label10">
+<summary>
+Label10 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Home_Reservation_System.frmdashboard._Label4">
+<summary>
+Label4 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Home_Reservation_System.frmdashboard._Label11">
+<summary>
+Label11 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Home_Reservation_System.frmdashboard._Label12">
+<summary>
+Label12 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Home_Reservation_System.frmdashboard._TextBox2">
+<summary>
+TextBox2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Home_Reservation_System.frmdashboard._Button1">
+<summary>
+Button1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Home_Reservation_System.frmdashboard._TextBox1">
+<summary>
+TextBox1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Home_Reservation_System.frmdashboard._Button2">
+<summary>
+Button2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Home_Reservation_System.frmdashboard._reservation_Grid">
+<summary>
+reservation_Grid control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Home_Reservation_System.frmdashboard._DataGridView1">
+<summary>
+DataGridView1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:Home_Reservation_System.frmroomsData._form1">
 <summary>
 form1 control.
