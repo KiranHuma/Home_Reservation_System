@@ -219,7 +219,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
         <h4>We accept</h4>
         <p><i class="fa fa-fw fa-cc-amex"></i> Amex</p>
         <p><i class="fa fa-fw fa-credit-card"></i> Credit Card</p>
-        <br>
+        <br/>
         <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>
         <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
         <i class="fa fa-snapchat w3-hover-opacity w3-large"></i>
@@ -247,7 +247,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
       <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
       <h2 class="w3-wide">NEWSLETTER</h2>
       <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"/></p>
       <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
     </div>
   </div>
