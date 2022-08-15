@@ -4,12 +4,26 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
-    <style type="text/css">
-        .auto-style1 {
-            text-align: left;
-        }
-    </style>
+    <title>Rooms Information</title>
+    <script type="text/javascript" language="javascript">
+
+            function DisableBackButton() {
+                window.history.forward()
+            }
+            DisableBackButton();
+            window.onload = DisableBackButton;
+            window.onpageshow = function (evt) { if (evt.persisted) DisableBackButton() }
+            window.onunload = function () { void (0) }
+    </script>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<style>
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+</style>
     </head>
 <body>
    
@@ -63,26 +77,12 @@
                            <asp:Button ID="btnsave" runat="server" Text="Save" />
                            <asp:Button ID="btnupdate" runat="server" Text="Update" />
                            <asp:Button ID="btndel" runat="server" Text="Delete" />
-                   <asp:Table ID="Table1" runat="server" CellPadding="15" 
-           GridLines="Both" HorizontalAlign="Left" BackColor="#99ccff" Font-Bold="true">
-
-    <asp:TableRow>
-         <asp:TableCell> Row 0, Col 0 </asp:TableCell>
-         <asp:TableCell> Row 0, Col 1 </asp:TableCell>
-    </asp:TableRow>
-
-
-    <asp:TableRow>
-        <asp:TableCell> Row 1, Col 0 </asp:TableCell>
-        <asp:TableCell> Row 1, Col 1 </asp:TableCell>
-    </asp:TableRow>
-
-     <asp:TableRow>
-        <asp:TableCell> Row 2, Col 0 </asp:TableCell>
-        <asp:TableCell> Row 2, Col 1 </asp:TableCell>
-    </asp:TableRow>
-
-</asp:Table>
+      
+                            
+                       
+                            
+                       </asp:Panel>
+                  
                     
                       
                       
