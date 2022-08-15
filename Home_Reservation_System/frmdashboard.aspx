@@ -39,7 +39,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   
       <br />
         
-      <a href="#"  class="w3-bar-item w3-button w3-blue w3-margin-bottom"> Room Information/CheckIn </a>
+      <a href="frmroomsData.aspx"  class="w3-bar-item w3-button w3-blue w3-margin-bottom"> Room Information/CheckIn </a>
     <a href="#" class="w3-bar-item w3-button w3-blue w3-margin-bottom">Services Information</a>
        <a href="#" class="w3-bar-item w3-button w3-blue w3-margin-bottom">Customer Payment</a>
 
