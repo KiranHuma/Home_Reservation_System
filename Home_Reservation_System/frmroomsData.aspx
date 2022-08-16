@@ -39,11 +39,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
       <br />
         
       <a href="frmroomsData.aspx"  class="w3-bar-item w3-button w3-blue w3-margin-bottom"> Room Information/CheckIn </a>
-    <a href="#" class="w3-bar-item w3-button w3-blue w3-margin-bottom">Services Information</a>
-       <a href="#" class="w3-bar-item w3-button w3-blue w3-margin-bottom">Customer Payment</a>
-
-  
-    <a href="#" class="w3-bar-item w3-button w3-blue w3-margin-bottom">Customer/Check In/Out </a>
+    
     
   </div>
   <a href="#footer"  class="w3-bar-item w3-button w3-blue w3-margin-bottom w3-padding">LogOut</a>
@@ -66,8 +62,8 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   <!-- Top header -->
   <header class="w3-container w3-xlarge">
     <p class="w3-left">Dashboard</p>
-         <p class="w3-left"><asp:Label ID="errormessage" runat="server" Text="Label" Visible="False"></asp:Label></p>
-       <p class="w3-left"> <asp:Label ID="Label16" runat="server" Text="Label" Visible="False"></asp:Label></p>
+         <p class="w3-left"><asp:Label ID="errormessage" runat="server" Text="Label"></asp:Label></p>
+       <p class="w3-left"> &nbsp;</p>
     
    <p class="w3-right">
       
@@ -78,18 +74,17 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     </p>
       
    
+      <asp:Label ID="status_lbl" runat="server" Text="Available"></asp:Label>
+      
+   
   </header>
 
   <!-- Image header -->
-  <div class="w3-display-container w3-container">
-    <img src="../images/homestays1.png" alt="Jeans" style="width:100%">
-    <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
-      <h1 class="w3-jumbo w3-hide-small">Home Stay Reservation System</h1>
-      <h1 class="w3-hide-large w3-hide-medium">New arrivals</h1>
-      <h1 class="w3-hide-small">Choose Best</h1>
-      <p><a href="#jeans" class="w3-button w3-black w3-padding-large w3-large">Book NOW</a></p>
+  <div class="w3-display-container w3-container" >
+    <img src="/images/otherpageHeader.png" alt="Jeans" style="width:100%" />
+
     </div>
-  </div>
+
 
   <div class="w3-container w3-text-grey" >
     <p></p>
@@ -99,11 +94,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   <div class="w3-row">
     <div class="w3-col l3 s6">
       <div class="w3-container">
-       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="/images/rooms.png"  style="width:40%"/>
-       
-            
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rooms<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:Label ID="Label10" runat="server" Text="Label" Font-Bold="True" Font-Size="Medium"></asp:Label>
-          </p>
+ 
       </div>
     
 
@@ -112,103 +103,249 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
       
          <div>
 
-            <asp:Panel ID="Panel1" runat="server" Height="23px" style="margin-top: 44px" Width="910px">
-                <asp:Button ID="RoomReg" runat="server" BackColor="#3366FF" BorderStyle="Groove" Font-Bold="True" ForeColor="#FFFFCC" Text="Rooms Registration" />
-                <asp:Button ID="Button2" runat="server" BackColor="#3366FF" BorderStyle="Groove" Font-Bold="True" ForeColor="#FFFFCC" Text="Room Reservation" />
-                <asp:Button ID="Button3" runat="server" BackColor="#3366FF" BorderStyle="Groove" Font-Bold="True" ForeColor="#FFFFCC" Text="Reserved Room" />
-                <asp:Button ID="Button4" runat="server" BackColor="#3366FF" BorderStyle="Groove" Font-Bold="True" ForeColor="#FFFFCC" Text="Search" />
-               <br />
-                <br />
-                <br />
-                <br />
-               <div>
+          
+               <div class="w3-padding-64 w3-light-grey w3-small w3-center ">
             <h2>MultiView and View Controls</h2>
 
             <hr />
 
             <asp:MultiView ID="MultiView1" runat="server" ActiveViewIndex="0"  >
                <asp:View ID="View1" runat="server">
-                  <h3 style="text-align: center">Room Registration</h3>
+                  <h3>Room Registration</h3>
                   
                     
                       
-                       <asp:Panel ID="Panel3" runat="server" Width="400px">
-                           <asp:Label ID="Label1" runat="server" Text="Room Number"></asp:Label>
-                           <asp:TextBox ID="roomnum_txt" runat="server" style="text-align: left"></asp:TextBox>
-                           <br />
-                           <asp:Label ID="Label2" runat="server" Text="Room Type"></asp:Label>
-                           <asp:DropDownList ID="roomtype_txt" runat="server" Width="157px">
+                       <p>
+                           <asp:Label ID="Label1" runat="server" Text="Room Number" Font-Bold="True"></asp:Label> &nbsp;&nbsp;
+                           <asp:TextBox ID="roomnum_txt" runat="server" style="text-align: left" Width="322px"></asp:TextBox>
+                             <br />
+                            <br />
+                           <asp:Label ID="Label2" runat="server" Text="Room Type" Font-Bold="True"></asp:Label> &nbsp;&nbsp;
+                          
+                           <asp:DropDownList ID="roomtype_txt" runat="server" Width="322px">
+                               <asp:ListItem>VIP</asp:ListItem>
+                               <asp:ListItem>Single Bed</asp:ListItem>
+                               <asp:ListItem>Double Bed</asp:ListItem>
                            </asp:DropDownList>
-                           <br />
-                           <asp:Label ID="Label3" runat="server" Text="Room Rate"></asp:Label>
-                           <asp:TextBox ID="roomrate_txt" runat="server"></asp:TextBox>
-                           <asp:Label ID="Label4" runat="server" Text="Select Date"></asp:Label>
-                           <asp:Calendar ID="regdate_txt" runat="server" BackColor="White" BorderColor="#3366CC" BorderWidth="1px" CellPadding="1" DayNameFormat="Shortest" Font-Names="Verdana" Font-Size="8pt" ForeColor="#003399" Height="200px" Width="200px">
-                               <DayHeaderStyle BackColor="#99CCCC" ForeColor="#336666" Height="1px" />
-                               <NextPrevStyle Font-Size="8pt" ForeColor="#CCCCFF" />
-                               <OtherMonthDayStyle ForeColor="#999999" />
-                               <SelectedDayStyle BackColor="#009999" Font-Bold="True" ForeColor="#CCFF99" />
-                               <SelectorStyle BackColor="#99CCCC" ForeColor="#336666" />
-                               <TitleStyle BackColor="#003399" BorderColor="#3366CC" BorderWidth="1px" Font-Bold="True" Font-Size="10pt" ForeColor="#CCCCFF" Height="25px" />
-                               <TodayDayStyle BackColor="#99CCCC" ForeColor="White" />
-                               <WeekendDayStyle BackColor="#CCCCFF" />
-                           </asp:Calendar>
-                           <asp:Button ID="btnadd" runat="server" Text="Add New" />
-                           <asp:Button ID="btnsave" runat="server" Text="Save" />
-                           <asp:Button ID="btnupdate" runat="server" Text="Update" />
-                           <asp:Button ID="btndel" runat="server" Text="Delete" />
-      
-                            
-                       
-                            
-                       </asp:Panel>
+                              <br />
+                            <br />
+                           <asp:Label ID="Label3" runat="server" Text="Room Rate" Font-Bold="True"></asp:Label> &nbsp; &nbsp;&nbsp;
+                              
+                           <asp:TextBox ID="roomrate_txt" runat="server"  Width="322px"></asp:TextBox>
+                             <br />
+                            <br />
+                            <br />
+                   </p>
+                   <asp:Label ID="Label4" runat="server" Text="Select Date"></asp:Label>
+                   <asp:Calendar ID="regdate_txt" runat="server" align="center" BackColor="White" BorderColor="#3366CC" BorderWidth="1px" CellPadding="1" DayNameFormat="Shortest" Font-Names="Verdana" Font-Size="8pt" ForeColor="#003399" Height="200px" Width="200px">
+                       <DayHeaderStyle BackColor="#99CCCC" ForeColor="#336666" Height="1px" />
+                       <NextPrevStyle Font-Size="8pt" ForeColor="#CCCCFF" />
+                       <OtherMonthDayStyle ForeColor="#999999" />
+                       <SelectedDayStyle BackColor="#009999" Font-Bold="True" ForeColor="#CCFF99" />
+                       <SelectorStyle BackColor="#99CCCC" ForeColor="#336666" />
+                       <TitleStyle BackColor="#003399" BorderColor="#3366CC" BorderWidth="1px" Font-Bold="True" Font-Size="10pt" ForeColor="#CCCCFF" Height="25px" />
+                       <TodayDayStyle BackColor="#99CCCC" ForeColor="White" />
+                       <WeekendDayStyle BackColor="#CCCCFF" />
+                   </asp:Calendar>
                   
                     
                       
+                       <asp:TextBox ID="roomrdate_txt0" runat="server" Visible="False" Width="322px"></asp:TextBox>
+                  
+                    
                       
-                      
-                      
-                 
-                   
+                       <br />
+                   <asp:Button ID="btnadd" runat="server" Text="Add New" BorderStyle="None" CssClass="w3-button w3-light-green" />
+                   <asp:Button ID="btnsave" runat="server" Text="Save" BorderStyle="None" CssClass="w3-button w3-green"/>
+                   <asp:Button ID="btnupdate" runat="server" Text="Update" BorderStyle="None" CssClass="w3-button w3-brown" Enabled="False"/>
+                   <asp:Button ID="btndel" runat="server" Text="Delete" BorderStyle="None" CssClass="w3-button w3-red " Enabled="False"/>
+                  
+                  
+                    <br />
+                        <br />
+                     <br />
+                     <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<asp:GridView ID="roomreg_Grid" align="center" runat="server" AllowPaging="true" AutoGenerateColumns="false" OnPageIndexChanging="OnPageIndexChanging" PageSize="10" AutoGenerateSelectButton="True">
+                                <Columns>
+                      <asp:BoundField DataField="roomnumber" HeaderText="Room Number" ItemStyle-Width="200px" />
+                      <asp:BoundField DataField="roomtype" HeaderText="Room Type" ItemStyle-Width="200px" />
+                      <asp:BoundField DataField="roomprice" HeaderText="Room Price" ItemStyle-Width="200px" />
+                   <asp:BoundField DataField="roomregdate" HeaderText="Room Registration Date" ItemStyle-Width="200px" />
+                                
+                                    </Columns>
+                           </asp:GridView>
+                       <asp:Panel ID="Panel3" class="w3-center" runat="server" Width="828px" style="margin-right: 0px">
+                       </asp:Panel>      
                    
                    <br />
-                  <asp:Button CommandArgument="View1" ID="btnnext1" runat="server"  BackColor="#3366FF" BorderStyle="Groove" Font-Bold="True" ForeColor="#FFFFCC" Text = "Rooms Registration" />
-                  <asp:Button CommandArgument="View2" CommandName="SwitchViewByID" ID="btnlast0" runat="server"  BackColor="#3366FF" BorderStyle="Groove" Font-Bold="True" ForeColor="#FFFFCC" Text  ="Room Reservation" />
-                   <asp:Button ID="btnlast2" runat="server"  BackColor="#3366FF" BorderStyle="Groove" Font-Bold="True" ForeColor="#FFFFCC" CommandArgument="View3" CommandName="SwitchViewByID" Text="Reserved Room" />
-                   <asp:Button ID="btnlast1" runat="server" CommandArgument="View4" CommandName="SwitchViewByID"  BackColor="#3366FF" BorderStyle="Groove" Font-Bold="True" ForeColor="#FFFFCC" Text="Search" />
+                    <br />
+                    <br />
+                    <br />
+                   <div style="background-color: #0099FF; height: 50px;" >
+                       <br />
+                       <asp:Button ID="btnnext1" runat="server" BackColor="#0099FF" BorderStyle="None" CommandArgument="View1" Font-Bold="True" ForeColor="#FFFFCC" Text="Rooms Registration" />
+                       <asp:Button ID="btnlast0" runat="server" BackColor="#0099FF" BorderStyle="None" CommandArgument="View2" CommandName="SwitchViewByID" Font-Bold="True" ForeColor="#FFFFCC" Text="Room Reservation" />
+                       <asp:Button ID="btnlast2" runat="server" BackColor="#0099FF" BorderStyle="None" CommandArgument="View3" CommandName="SwitchViewByID" Font-Bold="True" ForeColor="#FFFFCC" Text="Reserved Room" />
+                       <asp:Button ID="btnlast1" runat="server" BackColor="#0099FF" BorderStyle="None" CommandArgument="View4" CommandName="SwitchViewByID" Font-Bold="True" ForeColor="#FFFFCC" Text="Search" />
+                   <br />
+                       </div>
+                   <br />
                </asp:View> 
 
                <asp:View ID="View2" runat="server">
                   <h3>Room Reservation</h3>
-                 <asp:Button CommandName="View1" ID="Button6" runat="server"  BackColor="#3366FF" BorderStyle="Groove" Font-Bold="True" ForeColor="#FFFFCC" Text = "Rooms Registration" />
-                  <asp:Button CommandArgument="View2" CommandName="SwitchViewByID" ID="Button7" runat="server"   BackColor="#3366FF" BorderStyle="Groove" Font-Bold="True" ForeColor="#FFFFCC" Text  ="Room Reservation" />
-                   <asp:Button ID="Button8" runat="server" CommandArgument="View3" CommandName="SwitchViewByID"  BackColor="#3366FF" BorderStyle="Groove" Font-Bold="True" ForeColor="#FFFFCC" Text="Reserved Room" />
-                   <asp:Button ID="Button9" runat="server" CommandArgument="View4" CommandName="SwitchViewByID"  BackColor="#3366FF" BorderStyle="Groove" Font-Bold="True" ForeColor="#FFFFCC" Text="Search" />
-
-
+                   <p>
+                       <asp:Label ID="Label12" runat="server" Text="Entry #" Font-Bold="True"></asp:Label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                           <asp:TextBox ID="entry_txt" runat="server" style="text-align: left" Width="325px"></asp:TextBox>
+                             &nbsp;
+                       <asp:Label ID="Label11" runat="server" Text="Name" Font-Bold="True"></asp:Label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+                        <asp:TextBox ID="customer_txt" runat="server" style="text-align: left" Width="325px"></asp:TextBox>
+                             <br />
+                       <br />
+                        <asp:Label ID="Label14" runat="server" Text="Room Number" Font-Bold="True"></asp:Label> &nbsp;&nbsp;<asp:TextBox ID="customerRnumber_txt" runat="server" style="text-align: left" Width="325px"></asp:TextBox>
+                             &nbsp;<asp:Label ID="Label10" runat="server" Font-Bold="True" Text="Room Type"></asp:Label>
+                       &nbsp;&nbsp;
+                          
+                           <asp:DropDownList ID="re_roomtype_txt" runat="server" Width="325px">
+                               <asp:ListItem>VIP</asp:ListItem>
+                               <asp:ListItem>Single Bed</asp:ListItem>
+                               <asp:ListItem>Double Bed</asp:ListItem>
+                           </asp:DropDownList>
+                        <br />
+                       <br />
+                           <asp:Label ID="Label9" runat="server" Text="No. of Customer" Font-Bold="True"></asp:Label> &nbsp; &nbsp;&nbsp;
+                              
+                           <asp:TextBox ID="re_customer_txt" runat="server"  Width="294px"></asp:TextBox>
+                            
+                       <br />
+                       <br />
+                       <asp:Label ID="Label13" runat="server" Font-Bold="True" Text="Check In Date"></asp:Label>
+                       <asp:Calendar ID="re_checkin_dte" runat="server" align="center" BackColor="White" BorderColor="#3366CC" BorderWidth="1px" CellPadding="1" DayNameFormat="Shortest" Font-Names="Verdana" Font-Size="8pt" ForeColor="#003399" Height="200px" Width="200px">
+                           <DayHeaderStyle BackColor="#99CCCC" ForeColor="#336666" Height="1px" />
+                           <NextPrevStyle Font-Size="8pt" ForeColor="#CCCCFF" />
+                           <OtherMonthDayStyle ForeColor="#999999" />
+                           <SelectedDayStyle BackColor="#009999" Font-Bold="True" ForeColor="#CCFF99" />
+                           <SelectorStyle BackColor="#99CCCC" ForeColor="#336666" />
+                           <TitleStyle BackColor="#003399" BorderColor="#3366CC" BorderWidth="1px" Font-Bold="True" Font-Size="10pt" ForeColor="#CCCCFF" Height="25px" />
+                           <TodayDayStyle BackColor="#99CCCC" ForeColor="White" />
+                           <WeekendDayStyle BackColor="#CCCCFF" />
+                       </asp:Calendar>
+                        <br />
+                       <br />
+                             <asp:Label ID="Label15" runat="server" Font-Bold="True" Text="Address"></asp:Label>
+                       <asp:TextBox ID="re_address_txt" runat="server" Width="294px"></asp:TextBox> &nbsp;
+                       <asp:Label ID="Label16" runat="server" Font-Bold="True" Text="Phone Number"></asp:Label>
+                       <asp:TextBox ID="phonenumber_txt" runat="server" Width="325px"></asp:TextBox>
+                             <br />
+                            <br />
+                            <asp:Label ID="Label17" runat="server" Font-Bold="True" Text="Price"></asp:Label>
+                       <asp:TextBox ID="price_txt" runat="server" Width="294px"></asp:TextBox>
+                            <br />
+                   </p>
+                  
+                    
+                      
+                       <br />
+                   <asp:Button ID="btnadd_res" runat="server" Text="Add New" BorderStyle="None" CssClass="w3-button w3-light-green" />
+                                     <asp:Button ID="btnsave_reser" runat="server" Text="Reserve" BorderStyle="None" CssClass="w3-button w3-blue"/>
+                   
+                   <asp:Button ID="btnupdate_rserv" runat="server" Text="Update" BorderStyle="None" CssClass="w3-button w3-brown"/>
+                   <asp:Button ID="btndelete_rserve" runat="server" Text="Delete" BorderStyle="None" CssClass="w3-button w3-red "/>
+                     <asp:Button ID="Button1" runat="server" Text="Cancel" BorderStyle="None" CssClass="w3-button w3-light-blue "/>
+                    <br />
+                        <br />
+                     <br />
+                     <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                           <asp:GridView ID="reservation_Grid" align="center" runat="server" AllowPaging="true" AutoGenerateColumns="false" OnPageIndexChanging="OnPageIndexChanging" PageSize="10">
+                                <Columns>
+                      <asp:BoundField DataField="roomnumber" HeaderText="Room Number" ItemStyle-Width="200px" />
+                      <asp:BoundField DataField="roomtype" HeaderText="Room Type" ItemStyle-Width="200px" />
+                      <asp:BoundField DataField="roomprice" HeaderText="Room Price" ItemStyle-Width="200px" />
+                   <asp:BoundField DataField="roomregdate" HeaderText="Room Registration Date" ItemStyle-Width="200px" />                        
+                 <asp:BoundField DataField="Reservation_Status" HeaderText="Status" ItemStyle-Width="200px" />
+                    
+                                    </Columns>
+                           </asp:GridView>
+                   <p>
+                       &nbsp;</p>
+                   <div style="background-color: #0099FF;height: 50px;">
+                       <br />
+                 <asp:Button CommandName="View1" ID="Button6roomreserveView" runat="server"  BackColor="#0099FF" BorderStyle="None" Font-Bold="True" ForeColor="#FFFFCC" Text = "Rooms Registration" />
+                  <asp:Button CommandArgument="View2" CommandName="SwitchViewByID" ID="Button7" runat="server"   BackColor="#0099FF" BorderStyle="None" Font-Bold="True" ForeColor="#FFFFCC" Text  ="Room Reservation" />
+                   <asp:Button ID="Button8" runat="server" CommandArgument="View3" CommandName="SwitchViewByID"  BackColor="#0099FF" BorderStyle="None" Font-Bold="True" ForeColor="#FFFFCC" Text="Reserved Room" />
+                   <asp:Button ID="Button9" runat="server" CommandArgument="View4" CommandName="SwitchViewByID"  BackColor="#0099FF" BorderStyle="None" Font-Bold="True" ForeColor="#FFFFCC" Text="Search" />
+                       <br />
+                       </div>
                </asp:View> 
 
                <asp:View ID="View3" runat="server">
                   <h3> Reserved Room</h3>
+                   <p>
+                       <asp:Button ID="Button6" runat="server" BackColor="#0099FF" BorderStyle="None" CommandArgument="View2" CommandName="SwitchViewByID" Font-Bold="True" ForeColor="#FFFFCC" Text="Select Rows to Remove" />
+                   </p>
+                   <asp:GridView ID="reservedgrid" runat="server" align="center" AllowPaging="true" AutoGenerateColumns="false" OnPageIndexChanging="OnPageIndexChanging" PageSize="10">
+                       <Columns>
+                           <asp:BoundField DataField="EntryNumber" HeaderText="Entry Number" ItemStyle-Width="200px" />
+                           <asp:BoundField DataField="Customer_Name" HeaderText="Customer Name" ItemStyle-Width="200px" />
+                           <asp:BoundField DataField="Room_Number" HeaderText="Room Number" ItemStyle-Width="200px" />
+                           <asp:BoundField DataField="Room_Type" HeaderText="Room Type" ItemStyle-Width="200px" />
+                          <asp:BoundField DataField="Number_of_Customers" HeaderText="NO. of Customers" ItemStyle-Width="200px" />
+                              <asp:BoundField DataField="Check_In_Date" HeaderText="Check In Date" ItemStyle-Width="200px" />
+                              <asp:BoundField DataField="Address" HeaderText="Address" ItemStyle-Width="200px" />
+                              <asp:BoundField DataField="Phone_Number" HeaderText="Phone Number" ItemStyle-Width="200px" />
+                        <asp:BoundField DataField="Price" HeaderText="Price" ItemStyle-Width="200px" />
+                             <asp:BoundField DataField="Reservation_Status" HeaderText="Reservation Status" ItemStyle-Width="200px" />
+                           </Columns>
+                   </asp:GridView>
                   <br />
-                  <asp:Calendar ID="Calender1" runat="server"></asp:Calendar>
                   <br />
-                 <asp:Button CommandName="View1" ID="Button10" runat="server"  BackColor="#3366FF" BorderStyle="Groove" Font-Bold="True" ForeColor="#FFFFCC" Text = "Rooms Registration" />
-                  <asp:Button CommandArgument="View2" CommandName="SwitchViewByID" ID="Button11" runat="server"  BackColor="#3366FF" BorderStyle="Groove" Font-Bold="True" ForeColor="#FFFFCC" Text  ="Room Reservation" />
-                   <asp:Button ID="Button12" runat="server" CommandArgument="View3" CommandName="SwitchViewByID"  BackColor="#3366FF" BorderStyle="Groove" Font-Bold="True" ForeColor="#FFFFCC" Text="Reserved Room" />
-                   <asp:Button ID="Button13" runat="server" CommandArgument="View4" CommandName="SwitchViewByID"  BackColor="#3366FF" BorderStyle="Groove" Font-Bold="True" ForeColor="#FFFFCC" Text="Search" />
-               </asp:View> 
+                   <div style="background-color: #0099FF;height: 50px;">
+                       <br />
+                 <asp:Button CommandName="View1" ID="Button10" runat="server"  BackColor="#0099FF" BorderStyle="None" Font-Bold="True" ForeColor="#FFFFCC" Text = "Rooms Registration" />
+                  <asp:Button CommandArgument="View2" CommandName="SwitchViewByID" ID="Button11" runat="server"  BackColor="#0099FF" BorderStyle="None" Font-Bold="True" ForeColor="#FFFFCC" Text  ="Room Reservation" />
+                   <asp:Button ID="Button12" runat="server" CommandArgument="View3" CommandName="SwitchViewByID"  BackColor="#0099FF" BorderStyle="None" Font-Bold="True" ForeColor="#FFFFCC" Text="Reserved Room" />
+                   <asp:Button ID="Button13" runat="server" CommandArgument="View4" CommandName="SwitchViewByID"  BackColor="#0099FF" BorderStyle="None" Font-Bold="True" ForeColor="#FFFFCC" Text="Search" />
+             <br />
+                       </div >
+                       </asp:View> 
                     <asp:View ID="View4" runat="server">
                   <h3> Search</h3>
+                        <p>
+                            <asp:Label ID="Label21" runat="server" Text="Search by Customer Name"></asp:Label>
+                        </p>
+                        <p>
+                            <asp:TextBox ID="TextBox3" runat="server" Width="294px"></asp:TextBox>
+                        </p>
+                        <p>
+                            &nbsp;</p>
+                        <asp:GridView ID="DataGridView1" runat="server" align="center" AllowPaging="true" AutoGenerateColumns="false" OnPageIndexChanging="OnPageIndexChanging" PageSize="10">
+                               <Columns>
+                           <asp:BoundField DataField="EntryNumber" HeaderText="Entry Number" ItemStyle-Width="200px" />
+                           <asp:BoundField DataField="Customer_Name" HeaderText="Customer Name" ItemStyle-Width="200px" />
+                           <asp:BoundField DataField="Room_Number" HeaderText="Room Number" ItemStyle-Width="200px" />
+                           <asp:BoundField DataField="Room_Type" HeaderText="Room Type" ItemStyle-Width="200px" />
+                          <asp:BoundField DataField="Number_of_Customers" HeaderText="NO. of Customers" ItemStyle-Width="200px" />
+                              <asp:BoundField DataField="Check_In_Date" HeaderText="Check In Date" ItemStyle-Width="200px" />
+                              <asp:BoundField DataField="Address" HeaderText="Address" ItemStyle-Width="200px" />
+                              <asp:BoundField DataField="Phone_Number" HeaderText="Phone Number" ItemStyle-Width="200px" />
+                        <asp:BoundField DataField="Price" HeaderText="Price" ItemStyle-Width="200px" />
+                             <asp:BoundField DataField="Reservation_Status" HeaderText="Reservation Status" ItemStyle-Width="200px" />
+                           </Columns>
+                        </asp:GridView>
+                        <p>
+                            &nbsp;</p>
                   <br />
-                  <asp:Calendar ID="Calendar1" runat="server"></asp:Calendar>
                   <br />
-                  <asp:Button  CommandArgument="0" CommandName="SwitchViewByIndex" ID="Button1"   runat="server"  BackColor="#3366FF" BorderStyle="Groove" Font-Bold="True" ForeColor="#FFFFCC" Text = "Rooms Registration" />
-                  <asp:Button CommandName="View2" ID="Button5" runat="server"   BackColor="#3366FF" BorderStyle="Groove" Font-Bold="True" ForeColor="#FFFFCC" Text = "Room Reservation" />
+                        <div style="background-color: #0099FF;height: 50px;">
+                            <br />
+                  <asp:Button  CommandArgument="0" CommandName="SwitchViewByIndex" ID="Button1viewsearch"   runat="server"  BackColor="#0099FF" BorderStyle="None" Font-Bold="True" ForeColor="#FFFFCC" Text = "Rooms Registration" />
+                  <asp:Button CommandName="View2" ID="Button5" runat="server"   BackColor="#0099FF" BorderStyle="None" Font-Bold="True" ForeColor="#FFFFCC" Text = "Room Reservation" />
 
-                   <asp:Button ID="Button14" runat="server" CommandArgument="View3" CommandName="SwitchViewByID"  BackColor="#3366FF" BorderStyle="Groove" Font-Bold="True" ForeColor="#FFFFCC" Text="Reserved Room" />
-                   <asp:Button ID="Button15" runat="server" CommandArgument="View4" CommandName="SwitchViewByID"  BackColor="#3366FF" BorderStyle="Groove" Font-Bold="True" ForeColor="#FFFFCC" Text="Search" />     
-
+                   <asp:Button ID="Button14" runat="server" CommandArgument="View3" CommandName="SwitchViewByID"  BackColor="#0099FF" BorderStyle="None" Font-Bold="True" ForeColor="#FFFFCC" Text="Reserved Room" />
+                   <asp:Button ID="Button15" runat="server" CommandArgument="View4" CommandName="SwitchViewByID"  BackColor="#0099FF" BorderStyle="None" Font-Bold="True" ForeColor="#FFFFCC" Text="Search" />     
+                          <br />
+                            </div>
                     </asp:View> 
 
             </asp:MultiView>
@@ -216,119 +353,42 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 
 
 
-            </asp:Panel>
-
-        </div>
-         
-      
-    <div class="w3-col l3 s6">
-      <div class="w3-container">
-       
-          <img src="/images/occupiedroom.jpg" style="width:50%"/>
-         
-       
-        <p>Reserved Rooms<br/> <asp:Label ID="Label5" runat="server" Text="Label" Font-Bold="True" Font-Size="Medium"></asp:Label>
-          </p>
-      </div>
-    
-    </div>
-
-    <div class="w3-col l3 s6">
-      <div class="w3-container">
-        <img src="/images/checkin.png"  style="width:40%"/>
-        <p>Today's CheckIn<br/> <asp:Label ID="Label11" runat="server" Text="Label" Font-Bold="True" Font-Size="Medium"></asp:Label>
-          </p>
-      </div>
-      <div class="w3-container">
-        <div class="w3-display-container">
-         
-        
           
-        </div>
-      
-      </div>
-    </div>
 
-    <div class="w3-col l3 s6">
-      <div class="w3-container">
-        <img src="/images/checkout.png" style="width:40%"/>
-        <p> Today's CheckOut<br/><asp:Label ID="Label12" runat="server" Text="Label" Font-Bold="True" Font-Size="Medium"></asp:Label>
-          </p>
-      </div>
-     
-    </div>
+        </div>
+         
+      
+   
+
+   
+
+    
   </div>
 
   <!-- Subscribe section Button>>>>>class="w3-input w3-border" -->
-  <div class="w3-container w3-black w3-padding-32">
-   
-   
-    <p>&nbsp;</p>
-             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <asp:TextBox ID="TextBox2" runat="server" Width="235px"></asp:TextBox>
-       &nbsp;<asp:Button class="w3-button w3-red w3-margin-bottom"    ID="Button16" runat="server" Text="Search Available Room" Width="200px" />
-       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-             &nbsp;&nbsp;&nbsp;
-             
-      <asp:TextBox ID="TextBox1"  Width="235px" runat="server"></asp:TextBox>
-      &nbsp;
-      <asp:Button class="w3-button w3-red w3-margin-bottom"    ID="Button17" runat="server" Text="Search Customer List" Width="200px" />
-     
-      <br />
-      <br />
-      &nbsp;<br />
-       &nbsp;&nbsp;&nbsp;&nbsp;   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
-      <br />
-     
-  </div>
+ 
   
   <!-- Footer -->
   <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
     <div class="w3-row-padding">
       <div class="w3-col s4">
-        <h4>Available Room
-          </h4>
-          <p>
-              
-          </p>
+      
+   
+          <asp:Label ID="welcomemsg" runat="server"></asp:Label>
+      
    
       </div>
          &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 
          &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 
         
         
-      <div class="w3-col s4">
-        <h4>Coustmer List
-          </h4>
-          <p><asp:GridView ID="DataGridView1" runat="server" >
-           <Columns>
-       
-           
-    </Columns>
-            </asp:GridView>&nbsp;</p>
+  
        
       </div>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-      <div class="w3-col s4 w3-justify" id="jeans">
-        
-        <p><i class="fa fa-fw fa-map-marker"></i> Home Stay</p>
-        <p><i class="fa fa-fw fa-phone"></i> 0044123123</p>
-        <p><i class="fa fa-fw fa-envelope"></i> ex@mail.com</p>
-        <h4>We accept</h4>
-        <p><i class="fa fa-fw fa-cc-amex"></i> Amex</p>
-        <p><i class="fa fa-fw fa-credit-card"></i> Credit Card</p>
-        <br>
-        <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>
-        <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
-        <i class="fa fa-snapchat w3-hover-opacity w3-large"></i>
-        <i class="fa fa-pinterest-p w3-hover-opacity w3-large"></i>
-        <i class="fa fa-twitter w3-hover-opacity w3-large"></i>
-        <i class="fa fa-linkedin w3-hover-opacity w3-large"></i>
-      </div>
-    </div>
+     
+    
       
 
 

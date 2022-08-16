@@ -195,6 +195,7 @@
     <Content Include="images\checkout.png" />
     <Content Include="images\homestays1.png" />
     <Content Include="images\occupiedroom.jpg" />
+    <Content Include="images\otherpageHeader.png" />
     <Content Include="images\rooms.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />

@@ -34,7 +34,7 @@
     <br />
     <br />
    
-               Welcome To Home Stay Reservation System<br />
+          <br />
 
        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
