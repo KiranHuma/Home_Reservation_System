@@ -62,7 +62,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   <!-- Top header -->
   <header class="w3-container w3-xlarge">
     <p class="w3-left">Dashboard</p>
-         <p class="w3-left"><asp:Label ID="errormessage" runat="server" Text="Label"></asp:Label></p>
+         <p class="w3-left"><asp:Label ID="errormessage" runat="server" Text="Label" Visible="False"></asp:Label></p>
        <p class="w3-left"> &nbsp;</p>
     
    <p class="w3-right">
@@ -74,7 +74,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     </p>
       
    
-      <asp:Label ID="status_lbl" runat="server" Text="Available"></asp:Label>
+      <asp:Label ID="status_lbl" runat="server" Text="Available" Visible="False"></asp:Label>
       
    
   </header>
@@ -88,6 +88,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 
   <div class="w3-container w3-text-grey" >
     <p></p>
+      <p></p>
   </div>
 
   <!-- Product grid -->
@@ -105,7 +106,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 
           
                <div class="w3-padding-64 w3-light-grey w3-small w3-center ">
-            <h2>MultiView and View Controls</h2>
+            <h2>Room Management</h2>
 
             <hr />
 
@@ -135,6 +136,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
                              <br />
                             <br />
                             <br />
+                          
                    </p>
                    <asp:Label ID="Label4" runat="server" Text="Select Date"></asp:Label>
                    <asp:Calendar ID="regdate_txt" runat="server" align="center" BackColor="White" BorderColor="#3366CC" BorderWidth="1px" CellPadding="1" DayNameFormat="Shortest" Font-Names="Verdana" Font-Size="8pt" ForeColor="#003399" Height="200px" Width="200px">
@@ -150,7 +152,15 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
                   
                     
                       
+                       <br />
+                  
+                    
+                      
                        <asp:TextBox ID="roomrdate_txt0" runat="server" Visible="False" Width="322px"></asp:TextBox>
+                  
+                    
+                      
+                       <br />
                   
                     
                       
@@ -165,7 +175,12 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
                         <br />
                      <br />
                      <br />
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<asp:GridView ID="roomreg_Grid" align="center" runat="server" AllowPaging="true" AutoGenerateColumns="false" OnPageIndexChanging="OnPageIndexChanging" PageSize="10" AutoGenerateSelectButton="True">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Button ID="SearchRoom" runat="server" Text="Search Room Number" CssClass="w3-button w3-black"  Width="210px" />
+                   &nbsp;&nbsp;&nbsp;&nbsp;
+                   <asp:TextBox ID="room_search" runat="server" Width="322px"></asp:TextBox>
+                   &nbsp;&nbsp;&nbsp;
+                   <br />
+                   &nbsp;<asp:GridView ID="roomreg_Grid" align="center" runat="server" AllowPaging="true" AutoGenerateColumns="false" OnPageIndexChanging="OnPageIndexChanging" PageSize="10" AutoGenerateSelectButton="True">
                                 <Columns>
                       <asp:BoundField DataField="roomnumber" HeaderText="Room Number" ItemStyle-Width="200px" />
                       <asp:BoundField DataField="roomtype" HeaderText="Room Type" ItemStyle-Width="200px" />
@@ -183,10 +198,10 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
                     <br />
                    <div style="background-color: #0099FF; height: 50px;" >
                        <br />
-                       <asp:Button ID="btnnext1" runat="server" BackColor="#0099FF" BorderStyle="None" CommandArgument="View1" Font-Bold="True" ForeColor="#FFFFCC" Text="Rooms Registration" />
-                       <asp:Button ID="btnlast0" runat="server" BackColor="#0099FF" BorderStyle="None" CommandArgument="View2" CommandName="SwitchViewByID" Font-Bold="True" ForeColor="#FFFFCC" Text="Room Reservation" />
-                       <asp:Button ID="btnlast2" runat="server" BackColor="#0099FF" BorderStyle="None" CommandArgument="View3" CommandName="SwitchViewByID" Font-Bold="True" ForeColor="#FFFFCC" Text="Reserved Room" />
-                       <asp:Button ID="btnlast1" runat="server" BackColor="#0099FF" BorderStyle="None" CommandArgument="View4" CommandName="SwitchViewByID" Font-Bold="True" ForeColor="#FFFFCC" Text="Search" />
+                       <asp:Button ID="view1btn1" runat="server" BackColor="#0099FF" BorderStyle="None" CommandArgument="View1" Font-Bold="True" ForeColor="#FFFFCC" Text="Rooms Registration" />
+                       <asp:Button ID="view1btn2" runat="server" BackColor="#0099FF" BorderStyle="None" CommandArgument="View2" CommandName="SwitchViewByID" Font-Bold="True" ForeColor="#FFFFCC" Text="Room Reservation" />
+                       <asp:Button ID="view1btn3" runat="server" BackColor="#0099FF" BorderStyle="None" CommandArgument="View3" CommandName="SwitchViewByID" Font-Bold="True" ForeColor="#FFFFCC" Text="Reserved Room" />
+                       <asp:Button ID="view1btn4" runat="server" BackColor="#0099FF" BorderStyle="None" CommandArgument="View4" CommandName="SwitchViewByID" Font-Bold="True" ForeColor="#FFFFCC" Text="Search" />
                    <br />
                        </div>
                    <br />
@@ -202,11 +217,11 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
                         <asp:TextBox ID="customer_txt" runat="server" style="text-align: left" Width="325px"></asp:TextBox>
                              <br />
                        <br />
-                        <asp:Label ID="Label14" runat="server" Text="Room Number" Font-Bold="True"></asp:Label> &nbsp;&nbsp;<asp:TextBox ID="customerRnumber_txt" runat="server" style="text-align: left" Width="325px"></asp:TextBox>
+                        <asp:Label ID="Label14" runat="server" Text="Room Number" Font-Bold="True"></asp:Label> &nbsp;&nbsp;<asp:TextBox ID="customerRnumber_txt" runat="server" style="text-align: left" Width="325px" Enabled="False"></asp:TextBox>
                              &nbsp;<asp:Label ID="Label10" runat="server" Font-Bold="True" Text="Room Type"></asp:Label>
                        &nbsp;&nbsp;
                           
-                           <asp:DropDownList ID="re_roomtype_txt" runat="server" Width="325px">
+                           <asp:DropDownList ID="re_roomtype_txt" runat="server" Width="325px" Enabled="False">
                                <asp:ListItem>VIP</asp:ListItem>
                                <asp:ListItem>Single Bed</asp:ListItem>
                                <asp:ListItem>Double Bed</asp:ListItem>
@@ -230,17 +245,24 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
                            <TodayDayStyle BackColor="#99CCCC" ForeColor="White" />
                            <WeekendDayStyle BackColor="#CCCCFF" />
                        </asp:Calendar>
-                        <br />
-                       <br />
-                             <asp:Label ID="Label15" runat="server" Font-Bold="True" Text="Address"></asp:Label>
-                       <asp:TextBox ID="re_address_txt" runat="server" Width="294px"></asp:TextBox> &nbsp;
-                       <asp:Label ID="Label16" runat="server" Font-Bold="True" Text="Phone Number"></asp:Label>
-                       <asp:TextBox ID="phonenumber_txt" runat="server" Width="325px"></asp:TextBox>
-                             <br />
-                            <br />
-                            <asp:Label ID="Label17" runat="server" Font-Bold="True" Text="Price"></asp:Label>
-                       <asp:TextBox ID="price_txt" runat="server" Width="294px"></asp:TextBox>
-                            <br />
+                   </p>
+                  
+                    
+                      
+                       <p>
+                           <asp:TextBox ID="roomredate_txt1" runat="server" Visible="False" Width="322px"></asp:TextBox>
+                           <br />
+                           <br />
+                           <asp:Label ID="Label15" runat="server" Font-Bold="True" Text="Address"></asp:Label>
+                           <asp:TextBox ID="re_address_txt" runat="server" Width="294px"></asp:TextBox>
+                           &nbsp;
+                           <asp:Label ID="Label16" runat="server" Font-Bold="True" Text="Phone Number"></asp:Label>
+                           <asp:TextBox ID="phonenumber_txt" runat="server" Width="325px"></asp:TextBox>
+                           <br />
+                           <br />
+                           <asp:Label ID="Label17" runat="server" Font-Bold="True" Text="Price"></asp:Label>
+                           <asp:TextBox ID="price_txt" runat="server" Enabled="False" Width="294px"></asp:TextBox>
+                           <br />
                    </p>
                   
                     
@@ -249,15 +271,19 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
                    <asp:Button ID="btnadd_res" runat="server" Text="Add New" BorderStyle="None" CssClass="w3-button w3-light-green" />
                                      <asp:Button ID="btnsave_reser" runat="server" Text="Reserve" BorderStyle="None" CssClass="w3-button w3-blue"/>
                    
-                   <asp:Button ID="btnupdate_rserv" runat="server" Text="Update" BorderStyle="None" CssClass="w3-button w3-brown"/>
-                   <asp:Button ID="btndelete_rserve" runat="server" Text="Delete" BorderStyle="None" CssClass="w3-button w3-red "/>
-                     <asp:Button ID="Button1" runat="server" Text="Cancel" BorderStyle="None" CssClass="w3-button w3-light-blue "/>
+                   <asp:Button ID="btnupdate_rserv" runat="server" CommandArgument="View3" CommandName="SwitchViewByID"    Text="Update" BorderStyle="None" CssClass="w3-button w3-brown" Enabled="False"/>
+
+                
+                   <asp:Button ID="btndelete_rserve" runat="server" Text="Delete" BorderStyle="None" CssClass="w3-button w3-red " Enabled="False"/>
+                     <asp:Button ID="Button1" runat="server" Text="Cancel" BorderStyle="None" CssClass="w3-button w3-light-blue " Enabled="False"/>
                     <br />
                         <br />
                      <br />
+                     <asp:Button ID="SearchRoom0" runat="server" CssClass="w3-button w3-black" Text="Search Room Number" Width="210px" />
+                   <asp:TextBox ID="room_search0" runat="server" Width="322px"></asp:TextBox>
                      <br />
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                           <asp:GridView ID="reservation_Grid" align="center" runat="server" AllowPaging="true" AutoGenerateColumns="false" OnPageIndexChanging="OnPageIndexChanging" PageSize="10">
+                           <asp:GridView ID="reservation_Grid" align="center" runat="server" AllowPaging="true" AutoGenerateColumns="false" OnPageIndexChanging="OnPageIndexChanging" PageSize="10" AutoGenerateSelectButton="True">
                                 <Columns>
                       <asp:BoundField DataField="roomnumber" HeaderText="Room Number" ItemStyle-Width="200px" />
                       <asp:BoundField DataField="roomtype" HeaderText="Room Type" ItemStyle-Width="200px" />
@@ -271,10 +297,10 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
                        &nbsp;</p>
                    <div style="background-color: #0099FF;height: 50px;">
                        <br />
-                 <asp:Button CommandName="View1" ID="Button6roomreserveView" runat="server"  BackColor="#0099FF" BorderStyle="None" Font-Bold="True" ForeColor="#FFFFCC" Text = "Rooms Registration" />
-                  <asp:Button CommandArgument="View2" CommandName="SwitchViewByID" ID="Button7" runat="server"   BackColor="#0099FF" BorderStyle="None" Font-Bold="True" ForeColor="#FFFFCC" Text  ="Room Reservation" />
-                   <asp:Button ID="Button8" runat="server" CommandArgument="View3" CommandName="SwitchViewByID"  BackColor="#0099FF" BorderStyle="None" Font-Bold="True" ForeColor="#FFFFCC" Text="Reserved Room" />
-                   <asp:Button ID="Button9" runat="server" CommandArgument="View4" CommandName="SwitchViewByID"  BackColor="#0099FF" BorderStyle="None" Font-Bold="True" ForeColor="#FFFFCC" Text="Search" />
+                 <asp:Button CommandName="SwitchViewByID" ID="view2btn1" runat="server"   CommandArgument="View1" BackColor="#0099FF" BorderStyle="None" Font-Bold="True" ForeColor="#FFFFCC" Text = "Rooms Registration" />
+                  <asp:Button CommandArgument="View2" CommandName="SwitchViewByID" ID="view2btn2" runat="server"   BackColor="#0099FF" BorderStyle="None" Font-Bold="True" ForeColor="#FFFFCC" Text  ="Room Reservation" />
+                   <asp:Button ID="view2btn3" runat="server" CommandArgument="View3" CommandName="SwitchViewByID"  BackColor="#0099FF" BorderStyle="None" Font-Bold="True" ForeColor="#FFFFCC" Text="Reserved Room" />
+                   <asp:Button ID="view2btn4" runat="server" CommandArgument="View4" CommandName="SwitchViewByID"  BackColor="#0099FF" BorderStyle="None" Font-Bold="True" ForeColor="#FFFFCC" Text="Search" />
                        <br />
                        </div>
                </asp:View> 
@@ -282,9 +308,14 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
                <asp:View ID="View3" runat="server">
                   <h3> Reserved Room</h3>
                    <p>
-                       <asp:Button ID="Button6" runat="server" BackColor="#0099FF" BorderStyle="None" CommandArgument="View2" CommandName="SwitchViewByID" Font-Bold="True" ForeColor="#FFFFCC" Text="Select Rows to Remove" />
+                       <asp:Button ID="SearchRoom1" runat="server" CssClass="w3-button w3-black" Text="Search Customer" Width="210px" />
+                       <asp:TextBox ID="room_search1" runat="server" Width="322px"></asp:TextBox>
                    </p>
-                   <asp:GridView ID="reservedgrid" runat="server" align="center" AllowPaging="true" AutoGenerateColumns="false" OnPageIndexChanging="OnPageIndexChanging" PageSize="10">
+                   <p>
+                       <asp:Button ID="Button6" runat="server" BackColor="#0099FF" BorderStyle="None" CommandArgument="View2" CommandName="SwitchViewByID" Font-Bold="True" ForeColor="#FFFFCC" Text="Select Rows to Remove" />
+                       <asp:Label ID="Label22" runat="server" Text="Label" Visible="False"></asp:Label>
+                   </p>
+                   <asp:GridView ID="reservedgrid" runat="server" align="center" AllowPaging="true" AutoGenerateColumns="false" OnPageIndexChanging="OnPageIndexChanging" PageSize="10" AutoGenerateSelectButton="True">
                        <Columns>
                            <asp:BoundField DataField="EntryNumber" HeaderText="Entry Number" ItemStyle-Width="200px" />
                            <asp:BoundField DataField="Customer_Name" HeaderText="Customer Name" ItemStyle-Width="200px" />
@@ -302,10 +333,10 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
                   <br />
                    <div style="background-color: #0099FF;height: 50px;">
                        <br />
-                 <asp:Button CommandName="View1" ID="Button10" runat="server"  BackColor="#0099FF" BorderStyle="None" Font-Bold="True" ForeColor="#FFFFCC" Text = "Rooms Registration" />
-                  <asp:Button CommandArgument="View2" CommandName="SwitchViewByID" ID="Button11" runat="server"  BackColor="#0099FF" BorderStyle="None" Font-Bold="True" ForeColor="#FFFFCC" Text  ="Room Reservation" />
-                   <asp:Button ID="Button12" runat="server" CommandArgument="View3" CommandName="SwitchViewByID"  BackColor="#0099FF" BorderStyle="None" Font-Bold="True" ForeColor="#FFFFCC" Text="Reserved Room" />
-                   <asp:Button ID="Button13" runat="server" CommandArgument="View4" CommandName="SwitchViewByID"  BackColor="#0099FF" BorderStyle="None" Font-Bold="True" ForeColor="#FFFFCC" Text="Search" />
+                 <asp:Button CommandName="NextView" ID="view3btn1"   runat="server"  BackColor="#0099FF" BorderStyle="None" Font-Bold="True" ForeColor="#FFFFCC" Text = "Rooms Registration" />
+                  <asp:Button CommandArgument="View2" CommandName="SwitchViewByID" ID="view3btn2" runat="server"  BackColor="#0099FF" BorderStyle="None" Font-Bold="True" ForeColor="#FFFFCC" Text  ="Room Reservation" />
+                   <asp:Button ID="view3btn3" runat="server" CommandArgument="View3" CommandName="SwitchViewByID"  BackColor="#0099FF" BorderStyle="None" Font-Bold="True" ForeColor="#FFFFCC" Text="Reserved Room" />
+                   <asp:Button ID="view3btn4" runat="server" CommandArgument="View4" CommandName="SwitchViewByID"  BackColor="#0099FF" BorderStyle="None" Font-Bold="True" ForeColor="#FFFFCC" Text="Search" />
              <br />
                        </div >
                        </asp:View> 
@@ -316,6 +347,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
                         </p>
                         <p>
                             <asp:TextBox ID="TextBox3" runat="server" Width="294px"></asp:TextBox>
+                            <asp:Button ID="SearchRoom2" runat="server" CssClass="w3-button w3-black" Text="Search Customer" Width="210px" />
                         </p>
                         <p>
                             &nbsp;</p>
@@ -339,11 +371,11 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
                   <br />
                         <div style="background-color: #0099FF;height: 50px;">
                             <br />
-                  <asp:Button  CommandArgument="0" CommandName="SwitchViewByIndex" ID="Button1viewsearch"   runat="server"  BackColor="#0099FF" BorderStyle="None" Font-Bold="True" ForeColor="#FFFFCC" Text = "Rooms Registration" />
-                  <asp:Button CommandName="View2" ID="Button5" runat="server"   BackColor="#0099FF" BorderStyle="None" Font-Bold="True" ForeColor="#FFFFCC" Text = "Room Reservation" />
+                  <asp:Button  CommandArgument="0" ID="view4btn1"  CommandName="SwitchViewByIndex" runat="server"  BackColor="#0099FF" BorderStyle="None" Font-Bold="True" ForeColor="#FFFFCC" Text = "Rooms Registration" />
+                  <asp:Button ID="view4btn2" runat="server" CommandArgument="View2"   BackColor="#0099FF" BorderStyle="None" Font-Bold="True" ForeColor="#FFFFCC" Text = "Room Reservation" />
 
-                   <asp:Button ID="Button14" runat="server" CommandArgument="View3" CommandName="SwitchViewByID"  BackColor="#0099FF" BorderStyle="None" Font-Bold="True" ForeColor="#FFFFCC" Text="Reserved Room" />
-                   <asp:Button ID="Button15" runat="server" CommandArgument="View4" CommandName="SwitchViewByID"  BackColor="#0099FF" BorderStyle="None" Font-Bold="True" ForeColor="#FFFFCC" Text="Search" />     
+                   <asp:Button ID="view4btn3" runat="server"  CommandName="PrevView"  BackColor="#0099FF" BorderStyle="None" Font-Bold="True" ForeColor="#FFFFCC" Text="Reserved Room" />
+                   <asp:Button ID="view4btn4" runat="server" CommandName="PrevView"  BackColor="#0099FF" BorderStyle="None" Font-Bold="True" ForeColor="#FFFFCC" Text="Search" />     
                           <br />
                             </div>
                     </asp:View> 

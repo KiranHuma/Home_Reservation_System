@@ -185,6 +185,24 @@ Partial Public Class frmroomsData
     Protected WithEvents btndel As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
+    '''SearchRoom control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents SearchRoom As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''room_search control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents room_search As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
     '''roomreg_Grid control.
     '''</summary>
     '''<remarks>
@@ -203,40 +221,40 @@ Partial Public Class frmroomsData
     Protected WithEvents Panel3 As Global.System.Web.UI.WebControls.Panel
 
     '''<summary>
-    '''btnnext1 control.
+    '''view1btn1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents btnnext1 As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents view1btn1 As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''btnlast0 control.
+    '''view1btn2 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents btnlast0 As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents view1btn2 As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''btnlast2 control.
+    '''view1btn3 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents btnlast2 As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents view1btn3 As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''btnlast1 control.
+    '''view1btn4 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents btnlast1 As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents view1btn4 As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
     '''View2 control.
@@ -356,6 +374,15 @@ Partial Public Class frmroomsData
     Protected WithEvents re_checkin_dte As Global.System.Web.UI.WebControls.Calendar
 
     '''<summary>
+    '''roomredate_txt1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents roomredate_txt1 As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
     '''Label15 control.
     '''</summary>
     '''<remarks>
@@ -455,6 +482,24 @@ Partial Public Class frmroomsData
     Protected WithEvents Button1 As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
+    '''SearchRoom0 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents SearchRoom0 As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''room_search0 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents room_search0 As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
     '''reservation_Grid control.
     '''</summary>
     '''<remarks>
@@ -464,40 +509,40 @@ Partial Public Class frmroomsData
     Protected WithEvents reservation_Grid As Global.System.Web.UI.WebControls.GridView
 
     '''<summary>
-    '''Button6roomreserveView control.
+    '''view2btn1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Button6roomreserveView As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents view2btn1 As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''Button7 control.
+    '''view2btn2 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Button7 As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents view2btn2 As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''Button8 control.
+    '''view2btn3 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Button8 As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents view2btn3 As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''Button9 control.
+    '''view2btn4 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Button9 As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents view2btn4 As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
     '''View3 control.
@@ -509,6 +554,24 @@ Partial Public Class frmroomsData
     Protected WithEvents View3 As Global.System.Web.UI.WebControls.View
 
     '''<summary>
+    '''SearchRoom1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents SearchRoom1 As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''room_search1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents room_search1 As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
     '''Button6 control.
     '''</summary>
     '''<remarks>
@@ -516,6 +579,15 @@ Partial Public Class frmroomsData
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents Button6 As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''Label22 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Label22 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''reservedgrid control.
@@ -527,40 +599,40 @@ Partial Public Class frmroomsData
     Protected WithEvents reservedgrid As Global.System.Web.UI.WebControls.GridView
 
     '''<summary>
-    '''Button10 control.
+    '''view3btn1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Button10 As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents view3btn1 As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''Button11 control.
+    '''view3btn2 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Button11 As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents view3btn2 As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''Button12 control.
+    '''view3btn3 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Button12 As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents view3btn3 As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''Button13 control.
+    '''view3btn4 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Button13 As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents view3btn4 As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
     '''View4 control.
@@ -590,6 +662,15 @@ Partial Public Class frmroomsData
     Protected WithEvents TextBox3 As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
+    '''SearchRoom2 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents SearchRoom2 As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
     '''DataGridView1 control.
     '''</summary>
     '''<remarks>
@@ -599,40 +680,40 @@ Partial Public Class frmroomsData
     Protected WithEvents DataGridView1 As Global.System.Web.UI.WebControls.GridView
 
     '''<summary>
-    '''Button1viewsearch control.
+    '''view4btn1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Button1viewsearch As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents view4btn1 As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''Button5 control.
+    '''view4btn2 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Button5 As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents view4btn2 As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''Button14 control.
+    '''view4btn3 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Button14 As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents view4btn3 As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''Button15 control.
+    '''view4btn4 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Button15 As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents view4btn4 As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
     '''welcomemsg control.

@@ -397,6 +397,24 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:Home_Reservation_System.frmroomsData._SearchRoom">
+<summary>
+SearchRoom control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Home_Reservation_System.frmroomsData._room_search">
+<summary>
+room_search control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:Home_Reservation_System.frmroomsData._roomreg_Grid">
 <summary>
 roomreg_Grid control.
@@ -415,36 +433,36 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:Home_Reservation_System.frmroomsData._btnnext1">
+<member name="F:Home_Reservation_System.frmroomsData._view1btn1">
 <summary>
-btnnext1 control.
+view1btn1 control.
 </summary>
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:Home_Reservation_System.frmroomsData._btnlast0">
+<member name="F:Home_Reservation_System.frmroomsData._view1btn2">
 <summary>
-btnlast0 control.
+view1btn2 control.
 </summary>
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:Home_Reservation_System.frmroomsData._btnlast2">
+<member name="F:Home_Reservation_System.frmroomsData._view1btn3">
 <summary>
-btnlast2 control.
+view1btn3 control.
 </summary>
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:Home_Reservation_System.frmroomsData._btnlast1">
+<member name="F:Home_Reservation_System.frmroomsData._view1btn4">
 <summary>
-btnlast1 control.
+view1btn4 control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -568,6 +586,15 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:Home_Reservation_System.frmroomsData._roomredate_txt1">
+<summary>
+roomredate_txt1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:Home_Reservation_System.frmroomsData._Label15">
 <summary>
 Label15 control.
@@ -667,6 +694,24 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:Home_Reservation_System.frmroomsData._SearchRoom0">
+<summary>
+SearchRoom0 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Home_Reservation_System.frmroomsData._room_search0">
+<summary>
+room_search0 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:Home_Reservation_System.frmroomsData._reservation_Grid">
 <summary>
 reservation_Grid control.
@@ -676,36 +721,36 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:Home_Reservation_System.frmroomsData._Button6roomreserveView">
+<member name="F:Home_Reservation_System.frmroomsData._view2btn1">
 <summary>
-Button6roomreserveView control.
+view2btn1 control.
 </summary>
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:Home_Reservation_System.frmroomsData._Button7">
+<member name="F:Home_Reservation_System.frmroomsData._view2btn2">
 <summary>
-Button7 control.
+view2btn2 control.
 </summary>
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:Home_Reservation_System.frmroomsData._Button8">
+<member name="F:Home_Reservation_System.frmroomsData._view2btn3">
 <summary>
-Button8 control.
+view2btn3 control.
 </summary>
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:Home_Reservation_System.frmroomsData._Button9">
+<member name="F:Home_Reservation_System.frmroomsData._view2btn4">
 <summary>
-Button9 control.
+view2btn4 control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -721,9 +766,36 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:Home_Reservation_System.frmroomsData._SearchRoom1">
+<summary>
+SearchRoom1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Home_Reservation_System.frmroomsData._room_search1">
+<summary>
+room_search1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:Home_Reservation_System.frmroomsData._Button6">
 <summary>
 Button6 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Home_Reservation_System.frmroomsData._Label22">
+<summary>
+Label22 control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -739,36 +811,36 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:Home_Reservation_System.frmroomsData._Button10">
+<member name="F:Home_Reservation_System.frmroomsData._view3btn1">
 <summary>
-Button10 control.
+view3btn1 control.
 </summary>
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:Home_Reservation_System.frmroomsData._Button11">
+<member name="F:Home_Reservation_System.frmroomsData._view3btn2">
 <summary>
-Button11 control.
+view3btn2 control.
 </summary>
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:Home_Reservation_System.frmroomsData._Button12">
+<member name="F:Home_Reservation_System.frmroomsData._view3btn3">
 <summary>
-Button12 control.
+view3btn3 control.
 </summary>
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:Home_Reservation_System.frmroomsData._Button13">
+<member name="F:Home_Reservation_System.frmroomsData._view3btn4">
 <summary>
-Button13 control.
+view3btn4 control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -802,6 +874,15 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:Home_Reservation_System.frmroomsData._SearchRoom2">
+<summary>
+SearchRoom2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:Home_Reservation_System.frmroomsData._DataGridView1">
 <summary>
 DataGridView1 control.
@@ -811,36 +892,36 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:Home_Reservation_System.frmroomsData._Button1viewsearch">
+<member name="F:Home_Reservation_System.frmroomsData._view4btn1">
 <summary>
-Button1viewsearch control.
+view4btn1 control.
 </summary>
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:Home_Reservation_System.frmroomsData._Button5">
+<member name="F:Home_Reservation_System.frmroomsData._view4btn2">
 <summary>
-Button5 control.
+view4btn2 control.
 </summary>
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:Home_Reservation_System.frmroomsData._Button14">
+<member name="F:Home_Reservation_System.frmroomsData._view4btn3">
 <summary>
-Button14 control.
+view4btn3 control.
 </summary>
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:Home_Reservation_System.frmroomsData._Button15">
+<member name="F:Home_Reservation_System.frmroomsData._view4btn4">
 <summary>
-Button15 control.
+view4btn4 control.
 </summary>
 <remarks>
 Auto-generated field.
