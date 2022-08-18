@@ -19,8 +19,8 @@ Public Class frmroomsData
     Dim con As New SqlClient.SqlConnection
     Dim cmd As New SqlClient.SqlCommand
     Dim dt As New DataTable
-    ' Dim cs As String = "Data Source=SQL8004.site4now.net;Initial Catalog=db_a8b904_dbhmsystem;User Id=db_a8b904_dbhmsystem_admin;Password=Bitlock12"
-    Dim cs As String = "Data Source=ANIRUDH;Initial Catalog=db_hmsystem;Integrated Security=True"
+    Dim cs As String = "Data Source=SQL8004.site4now.net;Initial Catalog=db_a8b904_dbhmsystem;User Id=db_a8b904_dbhmsystem_admin;Password=Bitlock12"
+    'Dim cs As String = "Data Source=ANIRUDH;Initial Catalog=db_hmsystem;Integrated Security=True"
     Private Sub dbaccessconnection()
         Try
             con.ConnectionString = cs
@@ -191,7 +191,7 @@ Public Class frmroomsData
             roomnum_txt.Text = roomreg_Grid.SelectedRow.Cells(1).Text
             roomtype_txt.Text = roomreg_Grid.SelectedRow.Cells(2).Text
             roomrate_txt.Text = roomreg_Grid.SelectedRow.Cells(3).Text
-            roomrdate_txt0.Text = roomreg_Grid.SelectedRow.Cells(4).Text
+
             ' regdate_txt.Visible = False
             ' roomrdate_txt0.Visible = True
 

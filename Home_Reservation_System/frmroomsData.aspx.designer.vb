@@ -140,15 +140,6 @@ Partial Public Class frmroomsData
     Protected WithEvents regdate_txt As Global.System.Web.UI.WebControls.Calendar
 
     '''<summary>
-    '''roomrdate_txt0 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents roomrdate_txt0 As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
     '''btnadd control.
     '''</summary>
     '''<remarks>
@@ -372,15 +363,6 @@ Partial Public Class frmroomsData
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents re_checkin_dte As Global.System.Web.UI.WebControls.Calendar
-
-    '''<summary>
-    '''roomredate_txt1 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents roomredate_txt1 As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''Label15 control.

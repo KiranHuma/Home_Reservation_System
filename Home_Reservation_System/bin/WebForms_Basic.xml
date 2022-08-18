@@ -352,15 +352,6 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:Home_Reservation_System.frmroomsData._roomrdate_txt0">
-<summary>
-roomrdate_txt0 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
 <member name="F:Home_Reservation_System.frmroomsData._btnadd">
 <summary>
 btnadd control.
@@ -580,15 +571,6 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:Home_Reservation_System.frmroomsData._re_checkin_dte">
 <summary>
 re_checkin_dte control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:Home_Reservation_System.frmroomsData._roomredate_txt1">
-<summary>
-roomredate_txt1 control.
 </summary>
 <remarks>
 Auto-generated field.
