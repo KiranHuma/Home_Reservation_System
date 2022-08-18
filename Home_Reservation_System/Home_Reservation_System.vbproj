@@ -165,6 +165,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="AddUsers.aspx" />
     <Content Include="AdminPanel.aspx" />
     <Content Include="App_Data\db_hmsystem.mdf" />
     <Content Include="App_Data\db_hmsystem_log.ldf" />
@@ -229,6 +230,13 @@
     <Content Include="Bundle.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddUsers.aspx.designer.vb">
+      <DependentUpon>AddUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddUsers.aspx.vb">
+      <DependentUpon>AddUsers.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="AdminPanel.aspx.designer.vb">
       <DependentUpon>AdminPanel.aspx</DependentUpon>
     </Compile>

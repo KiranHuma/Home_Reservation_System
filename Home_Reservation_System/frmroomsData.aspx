@@ -127,7 +127,9 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
                            <tr>
                                <td class="auto-style3" style=" text-align: right;"><asp:Label ID="Label1" runat="server" Text="Room Number" Font-Bold="True"></asp:Label></td>
                                <td class="auto-style2" style=" text-align: left;"> 
-                           <asp:TextBox ID="roomnum_txt" runat="server" style="text-align: left" Width="322px"></asp:TextBox></td>
+                                   <br />
+                                   <asp:TextBox ID="roomnum_txt" runat="server" style="text-align: left" Width="322px"></asp:TextBox>
+                               </td>
                            </tr>
                            <tr><td></td></tr>
                            <tr>
@@ -183,7 +185,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
                      <br />
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Button ID="SearchRoom" runat="server" Text="Search Room Number" CssClass="w3-button w3-black"  Width="210px" />
                    &nbsp;&nbsp;&nbsp;&nbsp;
-                   <asp:TextBox ID="room_search" runat="server" Width="322px"></asp:TextBox>
+                   <asp:TextBox ID="room_search" runat="server" Width="322px" AutoPostBack="True"></asp:TextBox>
                    &nbsp;&nbsp;&nbsp;
                    <br />
                    &nbsp;<asp:GridView ID="roomreg_Grid" align="center" runat="server" AllowPaging="true" AutoGenerateColumns="false" OnPageIndexChanging="OnPageIndexChanging" PageSize="10" AutoGenerateSelectButton="True">
@@ -342,7 +344,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
                      <br />
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
                    <asp:Button ID="SearchRoom0" runat="server" CssClass="w3-button w3-black" Text="Search Room Number" Width="210px" />
-                   <asp:TextBox ID="room_search0" runat="server" Width="322px"></asp:TextBox>
+                   <asp:TextBox ID="room_search0" runat="server" Width="322px" AutoPostBack="True"></asp:TextBox>
                    <br />
                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                    <asp:GridView ID="reservation_Grid" runat="server" align="center" AllowPaging="true" AutoGenerateColumns="false" AutoGenerateSelectButton="True" OnPageIndexChanging="OnPageIndexChanging" PageSize="10">
@@ -370,7 +372,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
                   <h3> Reserved Room</h3>
                    <p>
                        <asp:Button ID="SearchRoom1" runat="server" CssClass="w3-button w3-black" Text="Search Customer" Width="210px" />
-                       <asp:TextBox ID="room_search1" runat="server" Width="322px"></asp:TextBox>
+                       <asp:TextBox ID="room_search1" runat="server" Width="322px" AutoPostBack="True"></asp:TextBox>
                    </p>
                    <p>
                        <asp:Button ID="Button6" runat="server" BackColor="#0099FF" BorderStyle="None" CommandArgument="View2" CommandName="SwitchViewByID" Font-Bold="True" ForeColor="#FFFFCC" Text="Select Rows to Remove" />
@@ -407,7 +409,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
                             <asp:Label ID="Label21" runat="server" Text="Search by Customer Name"></asp:Label>
                         </p>
                         <p>
-                            <asp:TextBox ID="TextBox3" runat="server" Width="294px"></asp:TextBox>
+                            <asp:TextBox ID="TextBox3" runat="server" Width="294px" AutoPostBack="True"></asp:TextBox>
                             <asp:Button ID="SearchRoom2" runat="server" CssClass="w3-button w3-black" Text="Search Customer" Width="210px" />
                         </p>
                         <p>

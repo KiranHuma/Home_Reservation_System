@@ -197,4 +197,38 @@ Public Class frmdashboard
             End Using
         End Using
     End Sub
+
+    Protected Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles TextBox2.TextChanged
+        Using con As New SqlConnection(cs)
+
+            Using cmd As New SqlCommand()
+                cmd.CommandText = ("Select roomnumber,roomtype,roomprice from db_roomreg where  Reservation_Status='Available' And  roomtype LIKE '%' + @roomtype + '%'")
+                cmd.Connection = con
+                cmd.Parameters.AddWithValue("@roomtype", TextBox2.Text.Trim())
+                Dim dt As New DataTable()
+                Using sda As New SqlDataAdapter(cmd)
+                    sda.Fill(dt)
+                    reservation_Grid.DataSource = dt
+                    reservation_Grid.DataBind()
+                End Using
+            End Using
+        End Using
+    End Sub
+
+    Protected Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
+        Using con As New SqlConnection(cs)
+
+            Using cmd As New SqlCommand()
+                cmd.CommandText = ("Select  EntryNumber,Customer_Name,Room_Number,Room_Type from db_reservation where Customer_Name LIKE '%' + @Customer_Name + '%'")
+                cmd.Connection = con
+                cmd.Parameters.AddWithValue("@Customer_Name", TextBox1.Text.Trim())
+                Dim dt As New DataTable()
+                Using sda As New SqlDataAdapter(cmd)
+                    sda.Fill(dt)
+                    DataGridView1.DataSource = dt
+                    DataGridView1.DataBind()
+                End Using
+            End Using
+        End Using
+    End Sub
 End Class

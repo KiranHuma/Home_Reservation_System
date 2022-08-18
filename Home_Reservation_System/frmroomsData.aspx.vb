@@ -634,7 +634,19 @@ Public Class frmroomsData
     End Sub
 
     Protected Sub TextBox3_TextChanged(sender As Object, e As EventArgs) Handles TextBox3.TextChanged
+        All_room_Search()
+    End Sub
 
+    Protected Sub room_search1_TextChanged(sender As Object, e As EventArgs) Handles room_search1.TextChanged
+        Room_Reserved_Search()
+    End Sub
+
+    Protected Sub room_search0_TextChanged(sender As Object, e As EventArgs) Handles room_search0.TextChanged
+        RoomReg_forreservation_Search()
+    End Sub
+
+    Protected Sub room_search_TextChanged(sender As Object, e As EventArgs) Handles room_search.TextChanged
+        RoomReg_Search()
     End Sub
 
 
