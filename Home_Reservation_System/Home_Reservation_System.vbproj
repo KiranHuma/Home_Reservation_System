@@ -179,7 +179,9 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Default.aspx" />
+    <Content Include="FrmCheckin_out.aspx" />
     <Content Include="frmdashboard.aspx" />
+    <Content Include="FrmPayment.aspx" />
     <Content Include="frmroomsData.aspx" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -190,6 +192,17 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="HSRsystem.xsc">
+      <DependentUpon>HSRsystem.xsd</DependentUpon>
+    </Content>
+    <None Include="HSRsystem.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HSRsystem.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="HSRsystem.xss">
+      <DependentUpon>HSRsystem.xsd</DependentUpon>
+    </Content>
     <None Include="My Project\PublishProfiles\IISProfile.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="images\checkin.png" />
@@ -267,11 +280,25 @@
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="FrmCheckin_out.aspx.designer.vb">
+      <DependentUpon>FrmCheckin_out.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCheckin_out.aspx.vb">
+      <DependentUpon>FrmCheckin_out.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="frmdashboard.aspx.designer.vb">
       <DependentUpon>frmdashboard.aspx</DependentUpon>
     </Compile>
     <Compile Include="frmdashboard.aspx.vb">
       <DependentUpon>frmdashboard.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmPayment.aspx.designer.vb">
+      <DependentUpon>FrmPayment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPayment.aspx.vb">
+      <DependentUpon>FrmPayment.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="frmroomsData.aspx.designer.vb">
@@ -283,6 +310,11 @@
     </Compile>
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="HSRsystem.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HSRsystem.xsd</DependentUpon>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
