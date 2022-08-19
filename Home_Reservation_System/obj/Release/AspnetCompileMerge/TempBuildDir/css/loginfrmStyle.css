@@ -1,0 +1,16 @@
+﻿body {
+    background-image: url('../images/homestays1.png');
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color:aqua;
+}
+.roundtextboxes {
+    color: Black;
+    border-radius: 50px;
+    height: 30px;
+    width:30px;
+}
+.alignright{
+    text-align:right;
+}

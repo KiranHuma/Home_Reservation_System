@@ -45,6 +45,7 @@ Public Class Frmlogin
             sda.Fill(dt)
             If dt.Rows(0)(0).ToString() = "1" Then
                 'Me.Close()
+                label6.Visible = True
                 label6.Text = "User Login succesfully"
                 ' frmdashboard.username_lbl.Text = Me.txtUsername.Text
                 ' frmdashboard.Show()
@@ -58,6 +59,7 @@ Public Class Frmlogin
                 ' Response.Redirect("frmdashboard.aspx?name='" + txtUsername.Text + "' ")
             Else
                 ' MessageBox.Show("Invalid username or password")
+                label6.Visible = True
                 label6.Text = " Not succsessfully login "
                 Response.Redirect("Default.aspx")
             End If
@@ -71,12 +73,13 @@ Public Class Frmlogin
 
 
                 '  AdminPanel.Show()
-
+                label6.Visible = True
                 label6.Text = "Admin Login succesfully"
                 Response.Redirect("AdminPanel.aspx")
             Else
                 ' MessageBox.Show("Your username Or password is not match", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 'label6.ForeColor = Color.Red
+                label6.Visible = True
                 label6.Text = " Not succsessfully login "
                 Response.Redirect("Default.aspx")
             End If

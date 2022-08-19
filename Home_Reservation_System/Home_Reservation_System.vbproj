@@ -183,6 +183,7 @@
     <Content Include="frmdashboard.aspx" />
     <Content Include="FrmPayment.aspx" />
     <Content Include="frmroomsData.aspx" />
+    <Content Include="FrmServices.aspx" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -306,6 +307,13 @@
     </Compile>
     <Compile Include="frmroomsData.aspx.vb">
       <DependentUpon>frmroomsData.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FrmServices.aspx.designer.vb">
+      <DependentUpon>FrmServices.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmServices.aspx.vb">
+      <DependentUpon>FrmServices.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Global.asax.vb">
