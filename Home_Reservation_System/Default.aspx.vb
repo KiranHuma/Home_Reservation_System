@@ -23,7 +23,7 @@ Public Class Frmlogin
     Dim cs As String = "Data Source=SQL8004.site4now.net;Initial Catalog=db_a8b904_dbhmsystem;User Id=db_a8b904_dbhmsystem_admin;Password=Bitlock12"
 
     'Dim cs As String = "Data Source=ANIRUDH;Initial Catalog=db_hmsystem;Integrated Security=True"
-    'Database Connection
+    'Database Connection 
     Private Sub dbaccessconnection()
         Try
             con.ConnectionString = cs
@@ -60,7 +60,7 @@ Public Class Frmlogin
             Else
                 ' MessageBox.Show("Invalid username or password")
                 label6.Visible = True
-                label6.Text = " Not succsessfully login "
+                label6.Text = " Not succsessfully login ,Try Again"
                 Response.Redirect("Default.aspx")
             End If
         ElseIf selectUser.Text = "Admin" Then
