@@ -50,6 +50,15 @@ Partial Public Class frmdashboard
     Protected WithEvents Label16 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
+    '''Label17 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Label17 As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
     '''Label10 control.
     '''</summary>
     '''<remarks>

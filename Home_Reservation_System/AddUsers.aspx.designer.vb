@@ -248,6 +248,15 @@ Partial Public Class AddUsers
     Protected WithEvents label7 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
+    '''Label16 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Label16 As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
     '''button2 control.
     '''</summary>
     '''<remarks>

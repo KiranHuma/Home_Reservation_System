@@ -271,6 +271,15 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:Home_Reservation_System.AddUsers._Label16">
+<summary>
+Label16 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:Home_Reservation_System.AddUsers._button2">
 <summary>
 button2 control.
@@ -406,9 +415,27 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:Home_Reservation_System.AdminPanel._Label3">
+<summary>
+Label3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:Home_Reservation_System.Frmlogin._form1">
 <summary>
 form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Home_Reservation_System.Frmlogin._Label7">
+<summary>
+Label7 control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -676,6 +703,15 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:Home_Reservation_System.FrmCheckin_out._Label22">
+<summary>
+Label22 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:Home_Reservation_System.frmdashboard._form1">
 <summary>
 form1 control.
@@ -706,6 +742,15 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:Home_Reservation_System.frmdashboard._Label16">
 <summary>
 Label16 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Home_Reservation_System.frmdashboard._Label17">
+<summary>
+Label17 control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -832,6 +877,15 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:Home_Reservation_System.FrmPayment._status_lbl">
 <summary>
 status_lbl control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Home_Reservation_System.FrmPayment._Label37">
+<summary>
+Label37 control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -1309,6 +1363,15 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:Home_Reservation_System.frmroomsData._status_lbl">
 <summary>
 status_lbl control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Home_Reservation_System.frmroomsData._Label23">
+<summary>
+Label23 control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -2002,6 +2065,15 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:Home_Reservation_System.FrmServices._status_lbl">
 <summary>
 status_lbl control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:Home_Reservation_System.FrmServices._Label9">
+<summary>
+Label9 control.
 </summary>
 <remarks>
 Auto-generated field.

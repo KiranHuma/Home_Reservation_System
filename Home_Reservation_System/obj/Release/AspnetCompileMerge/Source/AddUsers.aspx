@@ -38,7 +38,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 <nav class="w3-sidebar w3-bar-block w3-blue w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
   <div class="w3-container w3-display-container w3-padding-16">
     <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
-    <h3 class="w3-wide"><b><asp:Label ID="username_lbl" runat="server" Text="Label"></asp:Label>
+    <h3 class="w3-wide"><b><asp:Label ID="username_lbl" runat="server" Text="Label" Visible="False"></asp:Label>
         </b></h3>
   </div>
   <div class="w3-padding-64 w3-large w3-text-white" style="font-weight:bold">
@@ -49,7 +49,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     
     
   </div>
-  <a href="frmroomsData.aspx"  class="w3-bar-item w3-button w3-blue w3-margin-bottom w3-padding">LogOut</a>
+  <a href="Default.aspx"  class="w3-bar-item w3-button w3-blue w3-margin-bottom w3-padding">LogOut</a>
 </nav>
 
 <!-- Top menu on small screens -->
@@ -194,9 +194,16 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
                                    &nbsp;</td>
                                <td style=" text-align: left;">
                                    <asp:Label ID="label7" runat="server" Font-Bold="True" Text="label7"></asp:Label>
+                               &nbsp;&nbsp;
                                </td>
                            </tr>
-                             <tr><td></td></tr>
+                             <tr><td></td>
+                                 <td>
+
+                                     <asp:Label ID="Label16" runat="server"></asp:Label>
+
+                                 </td>
+                             </tr>
                            <tr>
                                <td style=" text-align: right;" class="auto-style10">
                                   

@@ -30,7 +30,7 @@ Public Class frmdashboard
             cmd.Connection = con
 
         Catch ex As Exception
-            MsgBox("DataBase not connected due to the reason because " & ex.Message)
+            Label17.Text = "DataBase not connected due to the reason because " & ex.Message
             Me.Dispose()
         End Try
     End Sub

@@ -26,7 +26,7 @@ Public Class frmroomsData
             con.ConnectionString = cs
             cmd.Connection = con
         Catch ex As Exception
-            MsgBox("DataBase not connected due to the reason because " & ex.Message)
+            Label23.Text = "DataBase not connected due to the reason because " & ex.Message
             Me.Dispose()
         End Try
     End Sub
@@ -53,7 +53,7 @@ Public Class frmroomsData
 
             getdata()
         Catch ex As Exception
-            MsgBox("Failed:Selected Value of members" & ex.Message)
+            Label23.Text = "Failed:Selected Value of members" & ex.Message
 
 
             'Response.Redirect("frmroomsData.aspx")
@@ -131,7 +131,7 @@ Public Class frmroomsData
             End If
             con.Close()
         Catch ex As Exception
-            MsgBox("Failed:Autoincrement of Room Number Entry" & ex.Message)
+            Label23.Text = "Failed:Autoincrement of Room Number Entry" & ex.Message
             Me.Dispose()
         End Try
     End Sub
@@ -160,7 +160,7 @@ Public Class frmroomsData
             dbaccessconnection()
             con.Open()
             If roomtype_txt.Text = "" Then
-                MsgBox("Empty RoomType")
+                Label23.Text = "Empty RoomType"
 
             Else
                 cmd.CommandText = ("UPDATE db_roomreg SET  roomnumber= '" & roomnum_txt.Text & "', roomtype= '" & roomtype_txt.Text & "',roomprice= '" & roomrate_txt.Text & "',roomregdate= '" & regdate_txt.SelectedDate & "' where roomnumber=" & roomnum_txt.Text & "")
@@ -172,7 +172,7 @@ Public Class frmroomsData
                 con.Close()
             End If
         Catch ex As Exception
-            MsgBox("Data Not Updated")
+            Label23.Text = "Data Not Updated"
             welcomemsg.ForeColor = System.Drawing.Color.Red
             Me.Dispose()
         End Try
@@ -197,7 +197,7 @@ Public Class frmroomsData
 
 
         Catch ex As Exception
-            MsgBox("Failed:GridCick " & ex.Message)
+            Label23.Text = "Failed:GridCick " & ex.Message
             Me.Dispose()
         End Try
 
@@ -220,7 +220,7 @@ Public Class frmroomsData
                 con.Close()
             End If
         Catch ex As Exception
-            MsgBox("Data Not Deleted")
+            Label23.Text = "Data Not Deleted"
             welcomemsg.ForeColor = System.Drawing.Color.Red
             Me.Dispose()
         End Try
@@ -267,7 +267,7 @@ Public Class frmroomsData
             con.Close()
             'getdata_reserve()
         Catch ex As Exception
-            MsgBox("Data Inserted Failed because " & ex.Message)
+            Label23.Text = "Data Inserted Failed because " & ex.Message
             Me.Dispose()
         End Try
 
@@ -284,7 +284,7 @@ Public Class frmroomsData
             ' MessageBox.Show("Status Updated")
             con.Close()
         Catch ex As Exception
-            MsgBox("Data Not Updated" & ex.Message)
+            Label23.Text = "Data Not Updated" & ex.Message
         End Try
     End Sub
     'for Cancellation of Reservation and set it to available
@@ -298,7 +298,7 @@ Public Class frmroomsData
             ' MessageBox.Show("Status Updated")
             con.Close()
         Catch ex As Exception
-            MsgBox("Data Not Updated" & ex.Message)
+            Label23.Text = "Data Not Updated" & ex.Message
         End Try
     End Sub
     'for Cancellation of Reservation 
@@ -312,7 +312,7 @@ Public Class frmroomsData
             ' MessageBox.Show("Status Updated")
             con.Close()
         Catch ex As Exception
-            MsgBox("Data Not Updated" & ex.Message)
+            Label23.Text = "Data Not Updated" & ex.Message
         End Try
     End Sub
     Private Sub delete_Cancellreserved_status()
@@ -325,7 +325,7 @@ Public Class frmroomsData
             ' MessageBox.Show("Status Updated")
             con.Close()
         Catch ex As Exception
-            MsgBox("Data Not Updated" & ex.Message)
+            Label23.Text = "Data Not Updated" & ex.Message
         End Try
     End Sub
     'autoincrement of entry number of reservation
@@ -345,7 +345,7 @@ Public Class frmroomsData
             End If
             con.Close()
         Catch ex As Exception
-            MsgBox("Failed:Autoincrement of Entrynumber" & ex.Message)
+            Label23.Text = "Failed:Autoincrement of Entrynumber" & ex.Message
             Me.Dispose()
         End Try
 
@@ -389,7 +389,7 @@ Public Class frmroomsData
                 con.Close()
             End If
         Catch ex As Exception
-            MsgBox("Data Not Updated" & ex.Message)
+            Label23.Text = "Data Not Updated" & ex.Message
             welcomemsg.ForeColor = System.Drawing.Color.Red
             Me.Dispose()
         End Try
@@ -434,7 +434,7 @@ Public Class frmroomsData
             MultiView1.SetActiveView(View2)
 
             Catch ex As Exception
-            MsgBox("Failed:GridCick " & ex.Message)
+            Label23.Text = "Failed:GridCick " & ex.Message
             Me.Dispose()
             End Try
 
@@ -493,7 +493,7 @@ Public Class frmroomsData
                 con.Close()
             End If
         Catch ex As Exception
-            MsgBox("Data Not Deleted")
+            Label23.Text = "Data Not Deleted"
             welcomemsg.ForeColor = System.Drawing.Color.Red
             Me.Dispose()
         End Try
@@ -532,7 +532,7 @@ Public Class frmroomsData
             DataGridView1.Visible = True
         Catch ex As Exception
 
-            MsgBox("Customer Name Search")
+            Label23.Text = "Customer Name Search"
             Me.Dispose()
         End Try
     End Sub
@@ -551,7 +551,7 @@ Public Class frmroomsData
 
     Protected Sub btnsave_reser_Click(sender As Object, e As EventArgs) Handles btnsave_reser.Click
         If customerRnumber_txt.Text = String.Empty Then
-            MsgBox("Select Available Room from List")
+            Label23.Text = "Select Available Room from List"
         Else
             status_lbl.Text = "Reserved"
             insert_reserve()

@@ -30,7 +30,7 @@ Public Class Frmlogin
             cmd.Connection = con
 
         Catch ex As Exception
-            MsgBox("DataBase not connected due to the reason because " & ex.Message)
+            Label7.Text = "DataBase not connected due to the reason because " & ex.Message
             Me.Dispose()
         End Try
     End Sub

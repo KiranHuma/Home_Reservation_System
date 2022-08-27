@@ -56,7 +56,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     
     
   </div>
-  <a href="frmroomsData.aspx"  class="w3-bar-item w3-button w3-blue w3-margin-bottom w3-padding">LogOut</a>
+  <a href="Default.aspx"  class="w3-bar-item w3-button w3-blue w3-margin-bottom w3-padding">LogOut</a>
 </nav>
 
 <!-- Top menu on small screens -->
@@ -82,6 +82,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
       <a href="frmdashboard.aspx"><i class="fa fa-home w3-margin-right"></i></a>           
     </p>       
       <asp:Label ID="status_lbl" runat="server" Text="Available" Visible="False"></asp:Label>     
+      <asp:Label ID="Label37" runat="server" Text="Label"></asp:Label>
   </header>
   <!-- Image header -->
   <div class="w3-display-container w3-container" >

@@ -228,4 +228,13 @@ Partial Public Class FrmCheckin_out
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents welcomemsg As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''Label22 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Label22 As Global.System.Web.UI.WebControls.Label
 End Class

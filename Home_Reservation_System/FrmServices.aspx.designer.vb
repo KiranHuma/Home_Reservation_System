@@ -50,6 +50,15 @@ Partial Public Class FrmServices
     Protected WithEvents status_lbl As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
+    '''Label9 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Label9 As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
     '''Label1 control.
     '''</summary>
     '''<remarks>

@@ -22,7 +22,7 @@ Public Class FrmPayment
             con.ConnectionString = cs
             cmd.Connection = con
         Catch ex As Exception
-            MsgBox("DataBase not connected due to the reason because " & ex.Message)
+            Label37.Text = "DataBase not connected due to the reason because " & ex.Message
             Me.Dispose()
         End Try
     End Sub
@@ -38,7 +38,7 @@ Public Class FrmPayment
             con.Close()
             getdata()
         Catch ex As Exception
-            MsgBox("Data Inserted Failed because " & ex.Message)
+            Label37.Text = "Data Inserted Failed because " & ex.Message
             Me.Dispose()
         End Try
     End Sub
@@ -59,7 +59,7 @@ Public Class FrmPayment
             End If
             con.Close()
         Catch ex As Exception
-            MsgBox("Failed:Autoincrement of Transaction ID " & ex.Message)
+            Label37.Text = "Failed:Autoincrement of Transaction ID " & ex.Message
             Me.Dispose()
         End Try
 
@@ -83,7 +83,7 @@ Public Class FrmPayment
                 con.Close()
             End If
         Catch ex As Exception
-            MsgBox("Data Not Updated")
+            Label37.Text = "Data Not Updated"
             welcomemsg.ForeColor = System.Drawing.Color.Red
             Me.Dispose()
         End Try
@@ -109,7 +109,7 @@ Public Class FrmPayment
                 con.Close()
             End If
         Catch ex As Exception
-            MsgBox("Data Not Deleted")
+            Label37.Text = "Data Not Deleted"
             welcomemsg.ForeColor = System.Drawing.Color.Red
             Me.Dispose()
         End Try
@@ -170,7 +170,7 @@ Public Class FrmPayment
                 End Using
             End Using
         Catch ex As Exception
-            MsgBox("Failed: customer Name Search" & ex.Message)
+            Label37.Text = "Failed: customer Name Search" & ex.Message
             Me.Dispose()
         End Try
     End Sub
@@ -271,7 +271,7 @@ Public Class FrmPayment
             Me.TextBox2.Text = payment_Grid.SelectedRow.Cells(14).Text
             Me.TextBox3.Text = payment_Grid.SelectedRow.Cells(15).Text
         Catch ex As Exception
-            MsgBox("Failed:GridCick " & ex.Message)
+            Label37.Text = "Failed:GridCick " & ex.Message
             Me.Dispose()
         End Try
     End Sub
@@ -406,7 +406,7 @@ Public Class FrmPayment
         Catch ex As Exception
 
 
-            MsgBox("Failed: Populating" & ex.Message)
+            Label37.Text = "Failed: Populating" & ex.Message
             Me.Dispose()
         End Try
     End Sub
@@ -488,7 +488,7 @@ Public Class FrmPayment
             ' MessageBox.Show("Status Updated")
             con.Close()
         Catch ex As Exception
-            MsgBox("Data Not Updated" & ex.Message)
+            Label37.Text = "Data Not Updated" & ex.Message
         End Try
     End Sub
 

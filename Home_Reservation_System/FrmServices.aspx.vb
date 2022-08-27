@@ -17,7 +17,7 @@ Public Class FrmServices
             con.ConnectionString = cs
             cmd.Connection = con
         Catch ex As Exception
-            MsgBox("DataBase not connected due to the reason because " & ex.Message)
+            Label9.Text = "DataBase not connected due to the reason because " & ex.Message
             Me.Dispose()
         End Try
     End Sub
@@ -32,10 +32,10 @@ Public Class FrmServices
             welcomemsg.Text = "'Service" & service_txt.Text & "' saved successfully!"
             welcomemsg.ForeColor = System.Drawing.Color.DarkGreen
             con.Close()
-            MsgBox("Data Save succesfully")
+            Label9.Text = "Data Save succesfully"
             getdata()
         Catch ex As Exception
-            MsgBox("Data Inserted Failed because " & ex.Message)
+            Label9.Text = "Data Inserted Failed because " & ex.Message
             Me.Dispose()
         End Try
     End Sub
@@ -56,7 +56,7 @@ Public Class FrmServices
             End If
             con.Close()
         Catch ex As Exception
-            MsgBox("Failed:Autoincrement of Service ID Entry" & ex.Message)
+            Label9.Text = "Failed:Autoincrement of Service ID Entry" & ex.Message
             Me.Dispose()
         End Try
 
@@ -78,7 +78,7 @@ Public Class FrmServices
                 con.Close()
             End If
         Catch ex As Exception
-            MsgBox("Data Not Updated")
+            Label9.Text = "Data Not Updated"
             welcomemsg.ForeColor = System.Drawing.Color.Red
             Me.Dispose()
         End Try
@@ -106,7 +106,7 @@ Public Class FrmServices
                 con.Close()
             End If
         Catch ex As Exception
-            MsgBox("Data Not Deleted")
+            Label9.Text = "Data Not Deleted"
             welcomemsg.ForeColor = System.Drawing.Color.Red
             Me.Dispose()
         End Try
@@ -133,8 +133,8 @@ Public Class FrmServices
                     End Using
                 End Using
             Catch ex As Exception
-                MsgBox("Failed:Retrieving Data" & ex.Message)
-                Me.Dispose()
+            Label9.Text = "Failed:Retrieving Data" & ex.Message
+            Me.Dispose()
             End Try
 
 
@@ -168,7 +168,7 @@ Public Class FrmServices
                 End Using
             End Using
         Catch ex As Exception
-            MsgBox("Failed: Service Name Search" & ex.Message)
+            Label9.Text = "Failed: Service Name Search" & ex.Message
             Me.Dispose()
         End Try
     End Sub
@@ -223,7 +223,7 @@ Public Class FrmServices
             Me.serviceRate_txt.Text = servicereg_Grid.SelectedRow.Cells(3).Text
             Me.serviceDate_txt.SelectedDate = servicereg_Grid.SelectedRow.Cells(4).Text
         Catch ex As Exception
-            MsgBox("Failed:GridCick " & ex.Message)
+            Label9.Text = "Failed:GridCick " & ex.Message
             Me.Dispose()
         End Try
     End Sub

@@ -22,7 +22,7 @@ Public Class AdminPanel
             con.ConnectionString = cs
             cmd.Connection = con
         Catch ex As Exception
-            MsgBox("DataBase not connected due to the reason because " & ex.Message)
+            Label3.Text = "DataBase not connected due to the reason because " & ex.Message
             Me.Dispose()
         End Try
     End Sub
@@ -67,7 +67,7 @@ Public Class AdminPanel
             dbaccessconnection()
             con.Open()
             If Label2.Text = "" Then
-                MsgBox("Empty RoomType")
+                Label3.Text = "Empty RoomType"
 
             Else
                 cmd.CommandText = ("delete from Users where U_ID = '" & Label2.Text & "'")
@@ -79,7 +79,7 @@ Public Class AdminPanel
                 con.Close()
             End If
         Catch ex As Exception
-            MsgBox("Data Not Deleted")
+            Label3.Text = "Data Not Deleted"
             welcomemsg.ForeColor = System.Drawing.Color.Red
             Me.Dispose()
         End Try

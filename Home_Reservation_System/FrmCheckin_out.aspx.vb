@@ -24,7 +24,7 @@ Public Class FrmCheckin_out
             con.ConnectionString = cs
             cmd.Connection = con
         Catch ex As Exception
-            MsgBox("DataBase not connected due to the reason because " & ex.Message)
+            Label22.Text = "DataBase not connected due to the reason because " & ex.Message
             Me.Dispose()
         End Try
     End Sub

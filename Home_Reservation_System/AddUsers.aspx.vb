@@ -28,7 +28,8 @@ Public Class AddUsers
             con.ConnectionString = cs
             cmd.Connection = con
         Catch ex As Exception
-            MsgBox("DataBase not connected due to the reason because " & ex.Message)
+
+            Label16.Text = "DataBase not connected due to the reason because " & ex.Message
             Me.Dispose()
         End Try
     End Sub
@@ -72,7 +73,7 @@ Public Class AddUsers
             read.Close()
 
         Catch ex As Exception
-
+            Label16.Text = ex.Message
             MsgBox(ex.Message)
             Me.Dispose()
         End Try
@@ -91,9 +92,12 @@ Public Class AddUsers
             cmd.ExecuteNonQuery()
             con.Close()
             ' getdata()
-            MsgBox("Registration completed Successfully")
+
+            Label16.Text = "Registration completed Successfully"
+
         Catch ex As Exception
-            MsgBox("Data Inserted Failed because " & ex.Message)
+            Label16.Text = "Data Inserted Failed because" & ex.Message
+
             Me.Dispose()
         End Try
     End Sub
@@ -108,9 +112,9 @@ Public Class AddUsers
                 cmd.ExecuteNonQuery()
                 con.Close()
 
-                MsgBox("Update Successfully")
+                Label16.Text = "Update Successfully"
             Catch ex As Exception
-                MsgBox("Data Inserted Failed because " & ex.Message)
+                Label16.Text = "Data Inserted Failed because " & ex.Message
                 Me.Dispose()
             End Try
 
@@ -180,7 +184,7 @@ Public Class AddUsers
             End If
             con.Close()
         Catch ex As Exception
-            MsgBox("Failed:Autoincrement of Transaction ID " & ex.Message)
+            Label16.Text = "Failed:Autoincrement of Transaction ID " & ex.Message
             Me.Dispose()
         End Try
 
