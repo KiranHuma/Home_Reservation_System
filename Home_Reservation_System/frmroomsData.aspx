@@ -376,10 +376,11 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
                        <asp:TextBox ID="room_search1" runat="server" Width="322px" AutoPostBack="True"></asp:TextBox>
                    </p>
                    <p>
-                       <asp:Button ID="Button6" runat="server" BackColor="#0099FF" BorderStyle="None" CommandArgument="View2" CommandName="SwitchViewByID" Font-Bold="True" ForeColor="#FFFFCC" Text="Select Rows to Remove" />
+                       <asp:Button ID="Button6" runat="server" BackColor="#0099FF" BorderStyle="None" CommandArgument="View2" CommandName="SwitchViewByID" Font-Bold="True" ForeColor="#FFFFCC" Text="Remove" />
                        <asp:Label ID="Label22" runat="server" Text="Label" Visible="False"></asp:Label>
+                       <asp:Label ID="Label24" runat="server" Text="Label"></asp:Label>
                    </p>
-                   <asp:GridView ID="reservedgrid" runat="server" align="center" AllowPaging="true" AutoGenerateColumns="false" OnPageIndexChanging="OnPageIndexChanging" PageSize="10" AutoGenerateSelectButton="True">
+                   <asp:GridView ID="reservedgrid" runat="server" align="center" AllowPaging="true" AutoGenerateColumns="false" OnPageIndexChanging="OnPageIndexChanging" PageSize="10" AutoGenerateSelectButton="True" ToolTip="Select row to Delete">
                        <Columns>
                            <asp:BoundField DataField="EntryNumber" HeaderText="Entry Number" ItemStyle-Width="200px" />
                            <asp:BoundField DataField="Customer_Name" HeaderText="Customer Name" ItemStyle-Width="200px" />

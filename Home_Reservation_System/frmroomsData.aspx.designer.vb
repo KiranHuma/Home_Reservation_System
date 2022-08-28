@@ -581,6 +581,15 @@ Partial Public Class frmroomsData
     Protected WithEvents Label22 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
+    '''Label24 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Label24 As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
     '''reservedgrid control.
     '''</summary>
     '''<remarks>

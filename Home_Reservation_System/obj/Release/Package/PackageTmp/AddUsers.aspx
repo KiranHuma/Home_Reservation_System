@@ -103,7 +103,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
                                    <asp:Label ID="Label10" runat="server" Font-Bold="True" Text="UserID"></asp:Label></td>
                                <td style=" text-align: left;">
                                    <asp:TextBox ID="Uid_txt" runat="server" style="text-align: left" Width="322px" AutoPostBack="True"></asp:TextBox>
-                                   <asp:Label ID="score_txt" runat="server" Text="0"></asp:Label>
+                                   <asp:Label ID="score_txt" runat="server" Text="0" Visible="False"></asp:Label>
                                </td>
                            </tr>
                              <tr><td></td></tr>

@@ -284,7 +284,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 
                          </td>
                          <td>
-                             <asp:TextBox ID="TextBox8" runat="server"></asp:TextBox>
+                             <asp:TextBox ID="TextBox8" runat="server" Visible="False"></asp:TextBox>
                          </td>
                      </tr>
                      <tr>

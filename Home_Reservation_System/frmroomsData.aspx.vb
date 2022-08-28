@@ -562,9 +562,7 @@ Public Class frmroomsData
         End If
     End Sub
 
-    Protected Sub view3btn2_Click(sender As Object, e As EventArgs) Handles view3btn2.Click
 
-    End Sub
     Private Sub RoomReg_forreservation_Search()
 
 

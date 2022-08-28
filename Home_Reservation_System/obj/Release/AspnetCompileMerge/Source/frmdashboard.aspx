@@ -44,9 +44,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
        <a href="FrmPayment.aspx" class="w3-bar-item w3-button w3-blue w3-margin-bottom">Customer Payment</a>
 
   
-    <a href="FrmCheckin_out.aspx" class="w3-bar-item w3-button w3-blue w3-margin-bottom">Customer/Check In/Out </a>
-    
-  </div>
+    <a href="FrmCheckin_out.aspx" class="w3-bar-item w3-button w3-blue w3-margin-bottom">Check In/Out Records</a></div>
   <a href="Default.aspx"  class="w3-bar-item w3-button w3-blue w3-margin-bottom w3-padding">LogOut</a>
 </nav>
 

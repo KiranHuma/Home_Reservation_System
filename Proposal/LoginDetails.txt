@@ -1,0 +1,7 @@
+default user login details
+http://ayatfatim-001-site1.atempurl.com/Default  (link to your website)
+
+user:
+user1:1234
+default admin login details
+user5:1234
